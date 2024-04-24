@@ -14,43 +14,42 @@ html {
   .container-wrapper {
     display: flex;
   }
-
-
+  
   .header-container {
     flex: 0 0 250px;
     border-right: 1px solid #ddd;
     padding: 20px;
   }
-
+  
   .logo {
     margin-bottom: 20px;
   }
-
+  
   .user-nav {
     display: flex;
     flex-direction: column;
   }
-
+  
   .user-info {
     margin-top: auto;
   }
-
+  
   main {
     flex: 1;
   }
-
+  
   .hero {
     background-image: none;
     height: auto;
     padding: 20px;
     text-align: left;
   }
-
+  
   .hero-inner {
     max-width: none;
     transform: none;
   }
-
+  
   .search input[type='search'] {
     width: 100%;
   }
