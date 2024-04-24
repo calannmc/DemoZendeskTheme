@@ -48,26 +48,9 @@ main {
   border-radius:0;
 }
 
-.user-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.user-nav li {
-  margin-left: 20px;
-}
-
 .user-nav a {
-  display: flex;
-  align-items: center;
-  color: #333;
-  text-decoration: none;
-}
-
-.user-nav a:hover {
-  text-decoration: none;
+  position: relative;
+  margin-right: 10px;
 }
 
 .user-nav a i {
@@ -76,7 +59,6 @@ main {
   background-color: #6f42c1;
   border-radius: 50%;
   padding: 10px;
-  margin-right: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -84,37 +66,35 @@ main {
   background-color: #5a32a3;
 }
 
-.hamburger-menu {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: #333;
+.user-nav a:hover {
+  text-decoration: none;
 }
 
-@media screen and (max-width: 576px) {
-  .user-nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+.user-nav a[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 4px;
+  z-index: 1;
+}
 
-  .user-nav li {
-    margin: 10px 0;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
-
-  .user-nav.active ul {
-    display: flex;
-  }
+.user-nav a[title]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  z-index: 1;
 }
 
 h1 {
