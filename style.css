@@ -54,6 +54,10 @@ html {
     text-decoration: none;
   }
   
+  .user-nav li {
+    position: relative;
+  }
+  
   .nav-title {
     visibility: hidden;
     color: grey;
@@ -64,8 +68,8 @@ html {
     transform: translateY(-50%);
     margin-left: 10px; /* Space between icon and text */
   }
-
-  li:hover .nav-title {
+  
+  .user-nav li:hover .nav-title {
     visibility: visible;
     cursor: pointer;
   }
