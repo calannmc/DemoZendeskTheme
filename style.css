@@ -26,53 +26,51 @@ html {
   }
   
   .user-nav ul {
-    list-style: none;
-    list-style-type: circle;
+    display: flex;
+    flex-direction: column; /* Aligns items in a column */
+    align-items: center; /* Centers items horizontally */
     padding: 0;
     margin: 0;
-  }
-  
-  .user-nav li {
-    margin-bottom: 10px;
-    position: relative;
-  }
-  
-  .user-nav a i {
-    font-size: 20px;
-    color: #fff;
-    background-color: #6f42c1;
-    border-radius: 50%;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .user-nav a:hover i {
-    background-color: #5a32a3;
-  }
-  
-  .user-nav a:hover {
-    text-decoration: none;
-  }
-  
-  .user-nav li {
-    position: relative;
-  }
-  
-  .nav-title {
-    visibility: hidden;
-    color: grey;
+}
+
+.user-nav li {
+    list-style: none;
+    margin-bottom: 20px; /* Space between icons */
+}
+
+.user-nav a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent */
+    position: relative; /* Establishes a positioning context for pseudo-elements */
+}
+
+.user-nav a:hover::after {
+    content: attr(title); /* Uses the title attribute for content */
     position: absolute;
     white-space: nowrap;
-    left: 100%; /* Adjust if needed */
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 10px; /* Space between icon and text */
-  }
-  
-  .user-nav li:hover .nav-title {
-    visibility: visible;
-    cursor: pointer;
-  }
+    bottom: 100%; /* Positions the tooltip above the icon */
+    left: 50%; /* Centers the tooltip */
+    transform: translateX(-50%); /* Ensures the centering is precise */
+    background-color: #333; /* Background of the tooltip */
+    color: #fff; /* Text color of the tooltip */
+    padding: 5px 10px; /* Padding inside the tooltip */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Smaller font size for tooltip */
+    z-index: 10; /* Ensures the tooltip is above other content */
+}
+
+.user-nav a i {
+    font-size: 20px; /* Icon size */
+    background-color: #6f42c1; /* Icon background color */
+    border-radius: 50%; /* Makes the background rounded */
+    padding: 10px; /* Space around the icon */
+    color: #fff; /* Icon color */
+}
+
+.user-nav a:hover i {
+    background-color: #5a32a3; /* Darker background on hover */
+}
+
   main {
     flex: 1;
   }
@@ -92,6 +90,7 @@ html {
   .search input[type='search'] {
     width: 100%;
     border: solid 1px #ddd;
+    margin:20px;
   }
 }
 
