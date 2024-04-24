@@ -5,33 +5,31 @@
           <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
         {{/link}}
       </div>
-   <nav class="user-nav" id="user-nav">
+ <nav class="user-nav" id="user-nav">
           <ul>
               <li>
-                  <a href="{{help_center.community_url}}" title="{{t 'community'}}">
+                  {{#link 'community' title=(t 'community') class='nav-icon'}}
                       <i class="fas fa-users"></i>
-                  </a>
+                  {{/link}}
               </li>
               <li>
-                  <a href="{{help_center.new_request_url}}" title="{{t 'submit_a_request'}}">
+                  {{#link 'new_request' title=(t 'submit_a_request') class='nav-icon submit-a-request'}}
                       <i class="fas fa-envelope"></i>
-                  </a>
+                  {{/link}}
               </li>
               {{#if signed_in}}
               <li>
-                  <a href="{{help_center.sign_out_url}}" title="{{t 'sign_out'}}">
-                      <i class="fas fa-sign-out-alt"></i>
-                  </a>
-              </li>
-              {{else}}
-              <li>
-                  <a href="{{help_center.sign_in_url}}" title="{{t 'sign_in'}}">
-                      <i class="fas fa-sign-in-alt"></i>
-                  </a>
-              </li>
-              {{/if}}
-          </ul>
-      </nav>
+                  <div class="user-info dropdown">
+                      {{user_avatar class="user-avatar"}}
+                      <span class="user-name">{{user_name}}</span>
+                      <div class="dropdown-menu" role="menu">
+                          {{#link "my_activities" role="menuitem" title=(t 'my_tickets') class='nav-icon'}}
+                              <i class="fas fa-ticket-alt"></i>
+                          {{/link}}
+                          {{#link "sign_out" role="menuitem" title=(t 'sign_out') class='nav-icon'}}
+                              <i class="fas fa-sign-out-alt"></i>
+                          {{/link}}
+                      </div>
     </header>
 
       <main role="main">
