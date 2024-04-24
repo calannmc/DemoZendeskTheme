@@ -1,7 +1,7 @@
 {
-  "name": "Demo Builder",
-  "author": "Marcelo De Bortoli",
-  "version": "1.0.0",
+  "name": "DemoZendeskTheme",
+  "author": "Carole McNally",
+  "version": "2.3.1",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
