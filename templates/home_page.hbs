@@ -1,4 +1,4 @@
-   <div class="container-wrapper">
+<div class="container-wrapper">
         <header class="header-container">
             <div class="logo">
                 {{#link 'help_center'}}
@@ -9,25 +9,20 @@
                 <div class="nav-item">
                     {{link 'community'}}
                 </div>
-                <div class="nav-item">
-                    {{#link 'new_request' class='submit-a-request'}}
-                        <i class="fas fa-envelope icon"></i> {{t 'submit_a_request'}}
-                    {{/link}}
-                </div>
                 {{#if signed_in}}
-                    <div class="nav-item user-info">
+                    <div class="user-info">
                         <div class="user-info-header dropdown-trigger">
                             {{user_avatar class="user-avatar"}}
                             <span class="user-name">{{user_name}}</span>
-                        </div>
-                        <div class="dropdown-menu" role="menu">
-                            <div class="menu-item">
-                                {{#link "my_activities" role="menuitem"}}
-                                    <i class="fas fa-ticket-alt icon"></i> {{t 'my_tickets'}}
-                                {{/link}}
-                            </div>
-                            <div class="menu-item">
-                                {{link "sign_out" role="menuitem"}}
+                            <div class="dropdown-menu" role="menu">
+                                <div class="menu-item">
+                                    {{#link "my_activities" role="menuitem"}}
+                                        <i class="fas fa-ticket-alt icon"></i> {{t 'my_tickets'}}
+                                    {{/link}}
+                                </div>
+                                <div class="menu-item">
+                                    {{link "sign_out" role="menuitem"}}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -36,9 +31,16 @@
                         {{#link "sign_in" class="sign-in"}}{{t 'sign_in'}}{{/link}}
                     </div>
                 {{/if}}
+                <div class="nav-item">
+                    {{#link 'new_request' class='submit-a-request'}}
+                        <i class="fas fa-envelope icon"></i> {{t 'submit_a_request'}}
+                    {{/link}}
+                </div>
             </nav>
         </header>
     </div>
+
+
 
 
       <main role="main">

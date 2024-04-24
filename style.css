@@ -31,10 +31,45 @@ html {
     margin: 10px;
 }
 
+.user-nav {
+  display: flex;
+  flex-direction: column;
+}
+
 .user-info {
+  margin-top: auto;
+}
+
+main {
+  flex: 1;
+}
+
+.hero {
+  background-image: none;
+  height: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.hero-inner {
+  max-width: none;
+  transform: none;
+}
+
+.search input[type='search'] {
+  width: 100%;
+}
+.nav-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center; /* Center elements vertically */
+    position: relative; /* Position relative to the dropdown menu */
 }
 
 .user-info-header {
@@ -55,17 +90,16 @@ html {
 
 .dropdown-menu {
     display: none;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    top: 100%; /* Position right below the user info */
+    left: 0; /* Align to the left of the user info */
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    width: 100%; /* Set width or keep auto */
-    position: absolute;
     z-index: 1;
 }
 
 .user-info:hover .dropdown-menu {
-    display: flex; /* Show the dropdown when hovering over user info */
+    display: block; /* Show the dropdown when hovering over user info */
 }
 
 .icon {
@@ -86,6 +120,11 @@ html {
 
 .menu-item i {
     margin-bottom: 5px;
+}
+
+.dropdown-menu {
+    right: 0; /* Position to the right of the user info header */
+    border: none; /* Remove border */
 }
 
   
