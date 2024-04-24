@@ -79,7 +79,8 @@ html {
   .user-info:hover .dropdown-menu {
     display: block; /* Show dropdown on hover */
     position: absolute;
-    background-color: #
+    background-color: #fff;
+  }
   
 
   main {
