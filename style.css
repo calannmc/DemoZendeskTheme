@@ -24,7 +24,6 @@ html {
   .logo {
     margin-bottom: 20px;
   }
-
   .nav-item {
     display: flex;
     flex-direction: column;
@@ -32,9 +31,9 @@ html {
     margin: 10px;
 }
 
-.nav-item i, .user-avatar {
-    display: block; /* Ensure icons and avatars are block-level for proper spacing */
-    width: 40px; /* Control the size of the icons and avatars */
+.icon {
+    display: inline-block; /* Ensure icons are properly formatted */
+    width: 40px; /* Control the size of the icons */
     height: 40px;
     border-radius: 50%;
     background-color: #800080; /* Purple background */
@@ -44,7 +43,7 @@ html {
     transition: background-color 0.3s; /* Smooth transition for the hover effect */
 }
 
-.nav-item i:hover, .user-avatar:hover {
+.icon:hover {
     background-color: #a74db7; /* Lighter purple on hover */
 }
 
@@ -57,7 +56,6 @@ html {
 .menu-item i {
     margin-bottom: 5px; /* Space between the icon and the text */
 }
-
   
 
   main {
