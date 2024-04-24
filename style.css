@@ -53,9 +53,9 @@ html {
     background-color: #5a32a3;
   }
   
-  .nav-icon:hover::after {
+  /*.nav-icon:hover::after {
     content: attr(title);
-    position: absolute;
+    position: relative;
     white-space: nowrap;
     bottom: 100%;
     left: 50%;
@@ -67,20 +67,20 @@ html {
     font-size: 12px;
     z-index: 10;
   }
-  
+  */
   .nav-icon:hover i {
     background-color: #5a32a3; /* Change color on hover */
   }
   
-  .user-info .dropdown-menu {
-    display: none; /* Initially hide dropdown */
+ /* .user-info .dropdown-menu {
+    display: none;
   }
   
   .user-info:hover .dropdown-menu {
-    display: block; /* Show dropdown on hover */
+    display: block; 
     position: absolute;
     background-color: #ddd;
-  }
+  }*/
   
 
   main {
