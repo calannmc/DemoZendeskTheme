@@ -47,10 +47,10 @@ html {
   
   .nav-icon i {
     font-size: 20px;
-    color: #333;
+    color: #fff;
     padding: 10px;
     border-radius: 50%;
-    background-color: #f0f0f0;
+    background-color: #5a32a3;
   }
   
   .nav-icon:hover::after {
@@ -79,7 +79,7 @@ html {
   .user-info:hover .dropdown-menu {
     display: block; /* Show dropdown on hover */
     position: absolute;
-    background-color: #fff;
+    background-color: #ddd;
   }
   
 
