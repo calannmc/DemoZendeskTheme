@@ -56,8 +56,16 @@ html {
   }
 }
 
+.user-nav a {
+  margin-right: 10px;
+}
+
 .user-nav a i {
-  margin-right: 5px;
+  font-size: 20px;
+}
+
+.user-nav a:hover {
+  text-decoration: none;
 }
 
 body {

@@ -1,4 +1,4 @@
- <div class="container-wrapper">
+  <div class="container-wrapper">
     <header class="header-container">
       <div class="logo">
         {{#link 'help_center'}}
@@ -6,28 +6,28 @@
         {{/link}}
       </div>
       <nav class="user-nav" id="user-nav">
-        {{#link 'community' title='{t 'community'}}'}}
-          <i class="fas fa-users"></i>
+        {{#link 'community'}}
+          <i class="fas fa-users" title="{{t 'community'}}"></i>
         {{/link}}
-        {{#link 'new_request' class='submit-a-request' title='{{t 'submit_a_request'}}'}}
-          <i class="fas fa-envelope"></i>
+        {{#link 'new_request' class='submit-a-request'}}
+          <i class="fas fa-envelope" title="{{t 'submit_a_request'}}"></i>
         {{/link}}
         {{#if signed_in}}
           <div class="user-info dropdown">
             {{user_avatar class="user-avatar"}}
             <span class="user-name">{{user_name}}</span>
             <div class="dropdown-menu" role="menu">
-              {{#link "my_activities" role="menuitem" title='{{t 'my_tickets'}}'}}
-                <i class="fas fa-ticket-alt"></i>
+              {{#link "my_activities" role="menuitem"}}
+                <i class="fas fa-ticket-alt" title="{{t 'my_tickets'}}"></i>
               {{/link}}
-              {{#link "sign_out" role="menuitem" title='{{t 'sign_out'}}'}}
-                <i class="fas fa-sign-out-alt"></i>
+              {{#link "sign_out" role="menuitem"}}
+                <i class="fas fa-sign-out-alt" title="{{t 'sign_out'}}"></i>
               {{/link}}
             </div>
           </div>
         {{else}}
-          {{#link "sign_in" class="sign-in" title='{{t 'sign_in'}}'}}
-            <i class="fas fa-sign-in-alt"></i>
+          {{#link "sign_in" class="sign-in"}}
+            <i class="fas fa-sign-in-alt" title="{{t 'sign_in'}}"></i>
           {{/link}}
         {{/if}}
       </nav>
