@@ -25,7 +25,7 @@ html {
     margin-bottom: 20px;
   }
 
-  .user-nav ul {
+ /* .user-nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@ html {
   
   .user-nav li {
     list-style: none;
-    margin-bottom: 10px; /* Spacing between icons */
+    margin-bottom: 10px; 
   }
   
   .nav-icon {
@@ -53,9 +53,9 @@ html {
     background-color: #5a32a3;
   }
   
-  .nav-icon:hover::after {
+.nav-icon:hover::after {
     content: attr(title);
-    position: absolute;
+    position: relative;
     white-space: nowrap;
     bottom: 100%;
     left: 50%;
@@ -69,18 +69,18 @@ html {
   }
   
   .nav-icon:hover i {
-    background-color: #5a32a3; /* Change color on hover */
+    background-color: #5a32a3; 
   }
   
-  .user-info .dropdown-menu {
-    display: none; /* Initially hide dropdown */
+ /* .user-info .dropdown-menu {
+    display: none;
   }
   
   .user-info:hover .dropdown-menu {
-    display: block; /* Show dropdown on hover */
+    display: block; 
     position: absolute;
     background-color: #ddd;
-  }
+  }*/
   
 
   main {
