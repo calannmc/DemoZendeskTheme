@@ -31,15 +31,10 @@
                   <i class="fas fa-ticket-alt" title="{{t 'requests'}}"></i>
                 {{/link}}
               </li>
-              <li class="user-info dropdown">
-                {{user_avatar class="user-avatar"}}
-                <span class="user-name">{{user_name}}</span>
-                <div class="dropdown-menu" role="menu">
-                  {{#link "sign_out" role="menuitem"}}
-                    <i class="fas fa-sign-out-alt" title="{{t 'sign_out'}}"></i>
-                  {{/link}}
-                </div>
-              </li>
+              <li>
+                {{#link "my_activities"}}
+                  <i class="fas fa-history" title="{{t 'activities'}}"></i>
+                {{/link}}
             {{else}}
               <li>
                 {{#link "sign_in" class="sign-in"}}
