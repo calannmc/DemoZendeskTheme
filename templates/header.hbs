@@ -2,28 +2,8 @@
 
 <header class="header-container">
 
-      <div class="logo">
-        {{#link 'help_center'}}
-        <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-        {{/link}}
-      </div>
-      <nav class="user-nav" id="user-nav">
-        {{link 'community'}}
-        {{link 'new_request' class='submit-a-request'}}
-        {{#if signed_in}}
-        <div class="user-info dropdown">
-          {{user_avatar class="user-avatar"}}
-          <span class="user-name">{{user_name}}</span>
-          <div class="dropdown-menu" role="menu">
-            {{link "my_activities" role="menuitem"}}
-            {{my_profile role="menuitem"}}
-            {{change_password role="menuitem"}}
-            {{link "sign_out" role="menuitem"}}
-          </div>
-        </div>
-        {{else}}
-        {{#link "sign_in" class="sign-in"}}{{t 'sign_in'}}{{/link}}
-        {{/if}}
-      </nav>
+            <h2>{{t 'search'}}</h2>
+              {{search submit=false instant=settings.instant_search class='search search-full'}}
+            </div>
    
 </header>
