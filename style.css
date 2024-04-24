@@ -31,31 +31,63 @@ html {
     margin: 10px;
 }
 
-.icon {
-    display: inline-block; /* Ensure icons are properly formatted */
-    width: 40px; /* Control the size of the icons */
-    height: 40px;
-    border-radius: 50%;
-    background-color: #800080; /* Purple background */
-    color: white; /* Icon color */
-    text-align: center;
-    line-height: 40px; /* Vertically center the icon text */
-    transition: background-color 0.3s; /* Smooth transition for the hover effect */
-}
-
-.icon:hover {
-    background-color: #a74db7; /* Lighter purple on hover */
-}
-
-.menu-item {
+.user-info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.menu-item i {
-    margin-bottom: 5px; /* Space between the icon and the text */
+.user-info-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-name {
+    margin-left: 10px; /* Space between the icon and name */
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 100%; /* Set width or keep auto */
+    position: absolute;
+    z-index: 1;
+}
+
+.user-info:hover .dropdown-menu {
+    display: flex; /* Show the dropdown when hovering over user info */
+}
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #800080;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s;
+}
+
+.icon:hover {
+    background-color: #a74db7;
+}
+
+.menu-item i {
+    margin-bottom: 5px;
+}
+
   
 
   main {
