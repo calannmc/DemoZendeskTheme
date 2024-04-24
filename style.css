@@ -93,7 +93,7 @@ html {
       display: none;
       position: absolute;
       top: 100%; /* Position directly below the user info header */
-      right: 0; /* Align to the right side */
+     left: 0; /* Align to the left side */
       background-color: #f9f9f9;
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
       width: auto; /* Auto width based on content */
@@ -106,13 +106,13 @@ html {
   
   .icon {
       display: inline-block;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       background-color: #800080;
       color: white;
       text-align: center;
-      line-height: 30px; /* Vertically center the icon text */
+      line-height: 40px; /* Vertically center the icon text */
       margin-right: 10px; /* Space between icon and text */
   }
   
