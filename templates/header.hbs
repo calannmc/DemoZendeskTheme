@@ -2,85 +2,28 @@
 
 <header class="header-container">
 
-  <div class="main-header">
-    <div class="header">
       <div class="logo">
         {{#link 'help_center'}}
-          <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+        <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
         {{/link}}
       </div>
-
-      <div class="nav-wrapper">
-        {{#if alternative_locales}}
-          <div class="dropdown language-selector">
-            <button class="dropdown-toggle" aria-haspopup="true">
-              <span>{{current_locale.name}}</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
-                <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
-              </svg>
-            </button>
-            <span class="dropdown-menu dropdown-menu-end" role="menu">
-              {{#each alternative_locales}}
-                <a href="{{url}}" rel="nofollow" role="menuitem">
-                  {{name}}
-                </a>
-              {{/each}}
-            </span>
-          </div>
-        {{/if}}
-        <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-menu">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" d="M1.5 3.5h13m-13 4h13m-13 4h13"/>
-          </svg>
-        </button>
-        <nav class="user-nav" id="user-nav">
-          {{link 'community'}}
-          {{link 'new_request' class='submit-a-request'}}
-          {{#if alternative_locales}}
-          	{{#each alternative_locales}}
-              <a href="{{url}}" rel="nofollow" role="mobile">
-                {{name}}
-              </a>
-          	{{/each}}
-          {{/if}}
-        </nav>
-
+      <nav class="user-nav" id="user-nav">
+        {{link 'community'}}
+        {{link 'new_request' class='submit-a-request'}}
         {{#if signed_in}}
-          <div class="user-info dropdown">
-            <button class="dropdown-toggle" aria-haspopup="true">
-              {{user_avatar class="user-avatar"}}
-              <span class="hide-on-mobile">
-                {{user_name}}
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon" aria-hidden="true">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
-                </svg>
-              </span>
-            </button>
-            <div class="dropdown-menu" role="menu">
-              {{link "my_activities" role="menuitem"}}
-              {{my_profile role="menuitem"}}
-              {{change_password role="menuitem"}}
-              {{link "sign_out" role="menuitem"}}
-            </div>
+        <div class="user-info dropdown">
+          {{user_avatar class="user-avatar"}}
+          <span class="user-name">{{user_name}}</span>
+          <div class="dropdown-menu" role="menu">
+            {{link "my_activities" role="menuitem"}}
+            {{my_profile role="menuitem"}}
+            {{change_password role="menuitem"}}
+            {{link "sign_out" role="menuitem"}}
           </div>
+        </div>
         {{else}}
-
-	        {{#link "sign_in" class="sign-in"}}
-        		<img class="user-avatar" alt="" data-user-avatar="false" role="mobile">
-        		<span>{{t 'sign_in'}}</span>
-          {{/link}}
-
+        {{#link "sign_in" class="sign-in"}}{{t 'sign_in'}}{{/link}}
         {{/if}}
-      </div>
-    </div>
-  </div>
-
-  {{#if settings.additional_header}}
-  <div class="additional-header">
-    <div class="container">
-      <img src="{{settings.additional_header_img}}" />
-    </div>
-  </div>
-  {{/if}}
-
+      </nav>
+   
 </header>
