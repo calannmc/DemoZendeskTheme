@@ -48,76 +48,73 @@ main {
   border-radius:0;
 }
 
-.nav-item {
+.user-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+}
+
+.user-nav li {
+  margin-left: 20px;
+}
+
+.user-nav a {
+  display: flex;
   align-items: center;
-  margin: 10px;
+  color: #333;
+  text-decoration: none;
 }
 
-.user-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center-align the user info */
-  position: relative; /* Needed for positioning the dropdown */
+.user-nav a:hover {
+  text-decoration: none;
 }
 
-.user-info-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
-.user-details {
-  display: flex;
-  align-items: center; /* Horizontally align the avatar and name */
-}
-
-.user-avatar {
-  width: 40px;
-  height: 40px;
+.user-nav a i {
+  font-size: 20px;
+  color: #fff;
+  background-color: #6f42c1;
   border-radius: 50%;
-}
-
-.user-name {
-  margin-left: 10px; /* Space between the avatar and the name */
-}
-
-.submit-a-ticket {
-  align-self: center; /* Center-align the submit link under the avatar */
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%; /* Position directly below the user info header */
-  left: 100%; /* Position to the right of the user info header */
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.user-info:hover .dropdown-menu {
-  display: block; /* Display the dropdown on hover */
-}
-
-.icon {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #800080;
-  color: white;
-  text-align: center;
-  line-height: 30px;
+  padding: 10px;
   margin-right: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  padding: 5px ;
+.user-nav a:hover i {
+  background-color: #5a32a3;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+@media screen and (max-width: 576px) {
+  .user-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-nav li {
+    margin: 10px 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .user-nav.active ul {
+    display: flex;
+  }
 }
 
 h1 {

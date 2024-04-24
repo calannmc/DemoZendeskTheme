@@ -486,3 +486,8 @@ document.addEventListener('click', function (event) {
     document.querySelector(event.target.dataset.target).style.display = 'none'
   }
 })
+
+function toggleMenu() {
+  var userNav = document.getElementById("user-nav");
+  userNav.classList.toggle("active");
+}
