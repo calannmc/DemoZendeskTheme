@@ -7,6 +7,14 @@
         </div>
         <nav class="user-nav" id="user-nav">
           <ul>
+             <li class="user-info dropdown">
+                {{user_avatar class="user-avatar"}}
+                <span class="user-name">{{user_name}}</span>
+                <div class="dropdown-menu" role="menu">
+                  {{#link "sign_out" role="menuitem"}}
+                    <i class="fas fa-sign-out-alt" title="{{t 'sign_out'}}"></i>
+                  {{/link}}
+                </div>
             <li>
               {{#link 'community'}}
                 <i class="fas fa-users" title="{{t 'community'}}"></i>
