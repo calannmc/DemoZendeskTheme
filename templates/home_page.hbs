@@ -1,47 +1,48 @@
- <div class="container-wrapper">
-        <header class="header-container">
-            <div class="logo">
-                {{#link 'help_center'}}
-                    <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-                {{/link}}
+<div class="container-wrapper">
+    <header class="header-container">
+        <div class="logo">
+            {{#link 'help_center'}}
+                <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+            {{/link}}
+        </div>
+        <nav class="user-nav" id="user-nav">
+            <div class="nav-item">
+                {{link 'community'}}
             </div>
-            <nav class="user-nav" id="user-nav">
-                <div class="nav-item">
-                    {{link 'community'}}
-                </div>
-                {{#if signed_in}}
-                    <div class="user-info">
-                        <div class="user-info-header dropdown-trigger">
-                            <div class="user-details">
-                                {{user_avatar class="user-avatar"}}
-                                <span class="user-name">{{user_name}}</span>
-                            </div>
-                           
-                            <div class="dropdown-menu" role="menu">
-                                <div class="menu-item">
-                                    {{#link "my_activities" role="menuitem"}}
-                                        <i class="fas fa-ticket-alt icon"></i> {{t 'requests'}}
-                                    {{/link}}
-                                </div>
-                                 <div class="submit-a-ticket">
+            {{#if signed_in}}
+                <div class="user-info">
+                    <div class="user-info-header">
+                        <div class="user-details">
+                            {{user_avatar class="user-avatar"}}
+                            <span class="user-name">{{user_name}}</span>
+                        </div>
+                        <div class="user-actions">
+                            <div class="submit-a-ticket">
                                 {{#link 'new_request' class='submit-a-request'}}
                                     <i class="fas fa-envelope icon"></i> {{t 'submit_a_request'}}
                                 {{/link}}
                             </div>
-                                <div class="menu-item">
-                                    {{link "sign_out" role="menuitem"}}
-                                </div>
+                            <div class="my-requests">
+                                {{#link "my_activities" role="menuitem"}}
+                                    <i class="fas fa-ticket-alt icon"></i> {{t 'my_tickets'}}
+                                {{/link}}
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" role="menu">
+                            <div class="menu-item">
+                                {{link "sign_out" role="menuitem"}}
                             </div>
                         </div>
                     </div>
-                {{else}}
-                    <div class="nav-item">
-                        {{#link "sign_in" class="sign-in"}}{{t 'sign_in'}}{{/link}}
-                    </div>
-                {{/if}}
-            </nav>
-        </header>
-    </div>
+                </div>
+            {{else}}
+                <div class="nav-item">
+                    {{#link "sign_in" class="sign-in"}}{{t 'sign_in'}}{{/link}}
+                </div>
+            {{/if}}
+        </nav>
+    </header>
+</div>
 
 
 
