@@ -25,15 +25,54 @@ html {
     margin-bottom: 20px;
   }
   
-  .user-nav {
-    display: flex;
-    flex-direction: column;
+  .user-nav a {
+    position: relative;
+    margin-right: 10px;
   }
   
-  .user-info {
-    margin-top: auto;
+  .user-nav a i {
+    font-size: 20px;
+    color: #fff;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
   }
   
+  .user-nav a:hover i {
+    background-color: #5a32a3;
+  }
+  
+  .user-nav a:hover {
+    text-decoration: none;
+  }
+  
+  .user-nav a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    white-space: nowrap;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .user-nav a[title]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+    z-index: 1;
+  }
   main {
     flex: 1;
   }
@@ -58,6 +97,7 @@ html {
 
 .user-nav a {
   margin-right: 10px;
+  border
 }
 
 .user-nav a i {
