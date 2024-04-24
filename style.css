@@ -52,6 +52,10 @@ main {
   position: relative;
   margin-right: 10px;
 }
+.user-nav li {
+  display: inline-block;
+  margin: 10px;
+}
 
 .user-nav a i {
   font-size: 20px;
@@ -1189,8 +1193,8 @@ input[type='submit'][disabled] {
 
 /***** User avatar *****/
 .user-avatar {
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
