@@ -25,9 +25,15 @@ html {
     margin-bottom: 20px;
   }
   
-  .user-nav a {
+  .user-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-nav li {
+    margin-bottom: 10px;
     position: relative;
-    margin-right: 10px;
   }
   
   .user-nav a i {
@@ -50,27 +56,29 @@ html {
   .user-nav a[title]:hover::after {
     content: attr(title);
     position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 5px 10px;
     background-color: #333;
     color: #fff;
     font-size: 12px;
     white-space: nowrap;
     border-radius: 4px;
+    margin-left: 10px;
     z-index: 1;
   }
   
   .user-nav a[title]:hover::before {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #333 transparent;
+    border-color: transparent #333 transparent transparent;
+    margin-left: 5px;
     z-index: 1;
   }
   main {
