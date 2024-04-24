@@ -54,75 +54,76 @@ html {
     width: 100%;
   }
   .nav-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
   }
   
   .user-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Center-align the user info */
-      position: relative; /* Needed for positioning the dropdown */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the user info */
+    position: relative; /* Needed for positioning the dropdown */
   }
   
   .user-info-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center; /* Horizontally align the avatar and name */
   }
   
   .user-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-bottom: 5px; /* Space between avatar and submit link */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
   
   .user-name {
-      margin-bottom: 5px; /* Space between name and submit link */
+    margin-left: 10px; /* Space between the avatar and the name */
   }
   
   .submit-a-ticket {
-      align-self: flex-end; /* Right-align the submit link */
+    align-self: center; /* Center-align the submit link under the avatar */
   }
   
   .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%; /* Position directly below the user info header */
-     left: 0; /* Align to the left side */
-      background-color: #f9f9f9;
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-      width: auto; /* Auto width based on content */
-      z-index: 1;
+    display: none;
+    position: absolute;
+    top: 100%; /* Position directly below the user info header */
+    left: 100%; /* Position to the right of the user info header */
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
   }
   
   .user-info:hover .dropdown-menu {
-      display: block; /* Display the dropdown on hover */
+    display: block; /* Display the dropdown on hover */
   }
   
   .icon {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #800080;
-      color: white;
-      text-align: center;
-      line-height: 40px; /* Vertically center the icon text */
-      margin-right: 10px; /* Space between icon and text */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #800080;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
   }
   
   .menu-item {
-      display: flex;
-      align-items: center; /* Align icon and text horizontally */
-      padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px ;
   }
-  
-  
 
 main {
   flex: 1;

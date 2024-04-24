@@ -1,4 +1,4 @@
-<div class="container-wrapper">
+ <div class="container-wrapper">
         <header class="header-container">
             <div class="logo">
                 {{#link 'help_center'}}
@@ -12,8 +12,15 @@
                 {{#if signed_in}}
                     <div class="user-info">
                         <div class="user-info-header dropdown-trigger">
-                            {{user_avatar class="user-avatar"}}
-                            <span class="user-name">{{user_name}}</span>
+                            <div class="user-details">
+                                {{user_avatar class="user-avatar"}}
+                                <span class="user-name">{{user_name}}</span>
+                            </div>
+                            <div class="submit-a-ticket">
+                                {{#link 'new_request' class='submit-a-request'}}
+                                    <i class="fas fa-envelope icon"></i> {{t 'submit_a_request'}}
+                                {{/link}}
+                            </div>
                             <div class="dropdown-menu" role="menu">
                                 <div class="menu-item">
                                     {{#link "my_activities" role="menuitem"}}
@@ -31,14 +38,10 @@
                         {{#link "sign_in" class="sign-in"}}{{t 'sign_in'}}{{/link}}
                     </div>
                 {{/if}}
-                <div class="nav-item">
-                    {{#link 'new_request' class='submit-a-request'}}
-                        <i class="fas fa-envelope icon"></i> {{t 'submit_a_request'}}
-                    {{/link}}
-                </div>
             </nav>
         </header>
     </div>
+
 
 
 
