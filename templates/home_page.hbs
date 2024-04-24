@@ -16,17 +16,18 @@
                                 {{user_avatar class="user-avatar"}}
                                 <span class="user-name">{{user_name}}</span>
                             </div>
-                            <div class="submit-a-ticket">
-                                {{#link 'new_request' class='submit-a-request'}}
-                                    <i class="fas fa-envelope icon"></i> {{t 'submit_a_request'}}
-                                {{/link}}
-                            </div>
+                           
                             <div class="dropdown-menu" role="menu">
                                 <div class="menu-item">
                                     {{#link "my_activities" role="menuitem"}}
                                         <i class="fas fa-ticket-alt icon"></i> {{t 'requests'}}
                                     {{/link}}
                                 </div>
+                                 <div class="submit-a-ticket">
+                                {{#link 'new_request' class='submit-a-request'}}
+                                    <i class="fas fa-envelope icon"></i> {{t 'submit_a_request'}}
+                                {{/link}}
+                            </div>
                                 <div class="menu-item">
                                     {{link "sign_out" role="menuitem"}}
                                 </div>

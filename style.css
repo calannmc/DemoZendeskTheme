@@ -24,106 +24,7 @@ html {
   .logo {
     margin-bottom: 20px;
   }
-
-  .user-nav {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .user-info {
-    margin-top: auto;
-  }
-  
-  main {
-    flex: 1;
-  }
-  
-  .hero {
-    background-image: none;
-    height: auto;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .hero-inner {
-    max-width: none;
-    transform: none;
-  }
-  
-  .search input[type='search'] {
-    width: 100%;
-  }
-  .nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-  }
-  
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Center-align the user info */
-    position: relative; /* Needed for positioning the dropdown */
-  }
-  
-  .user-info-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    cursor: pointer;
-  }
-  
-  .user-details {
-    display: flex;
-    align-items: center; /* Horizontally align the avatar and name */
-  }
-  
-  .user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .user-name {
-    margin-left: 10px; /* Space between the avatar and the name */
-  }
-  
-  .submit-a-ticket {
-    align-self: center; /* Center-align the submit link under the avatar */
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position directly below the user info header */
-    left: 100%; /* Position to the right of the user info header */
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .user-info:hover .dropdown-menu {
-    display: block; /* Display the dropdown on hover */
-  }
-  
-  .icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #800080;
-    color: white;
-    text-align: center;
-    line-height: 30px;
-    margin-right: 10px;
-  }
-  
-  .menu-item {
-    display: flex;
-    align-items: center;
-    padding: 5px ;
-  }
+}
 
 main {
   flex: 1;
@@ -144,119 +45,79 @@ main {
 .search input[type='search'] {
   width: 100%;
 }
+
 .nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
 .user-info {
-    display: flex;
-    align-items: center; /* Center elements vertically */
-    position: relative; /* Position relative to the dropdown menu */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align the user info */
+  position: relative; /* Needed for positioning the dropdown */
 }
 
 .user-info-header {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-details {
+  display: flex;
+  align-items: center; /* Horizontally align the avatar and name */
 }
 
 .user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .user-name {
-    margin-left: 10px; /* Space between the icon and name */
+  margin-left: 10px; /* Space between the avatar and the name */
+}
+
+.submit-a-ticket {
+  align-self: center; /* Center-align the submit link under the avatar */
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position right below the user info */
-    left: 0; /* Align to the left of the user info */
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  top: 100%; /* Position directly below the user info header */
+  left: 100%; /* Position to the right of the user info header */
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .user-info:hover .dropdown-menu {
-    display: block; /* Show the dropdown when hovering over user info */
+  display: block; /* Display the dropdown on hover */
 }
 
 .icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #800080;
-    color: white;
-    text-align: center;
-    line-height: 40px;
-    transition: background-color 0.3s;
-}
-
-.icon:hover {
-    background-color: #a74db7;
-}
-
-.menu-item i {
-    margin-bottom: 5px;
-}
-
-.dropdown-menu {
-    right: 0; /* Position to the right of the user info header */
-    border: none; /* Remove border */
-}
-
-  
-
-  main {
-    flex: 1;
-  }
-  
-  .hero {
-    background-image: none;
-    height: auto;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .hero-inner {
-    max-width: none;
-    transform: none;
-  }
-  
-  .search input[type='search'] {
-    width: 100%;
-    border: solid 1px #ddd;
-    margin:20px;
-  }
-}
-
-.user-nav a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #800080;
+  color: white;
+  text-align: center;
+  line-height: 30px;
   margin-right: 10px;
-  border
 }
 
-.user-nav a i {
-  font-size: 20px;
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 5px ;
 }
 
-.user-nav a:hover {
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  display: block;
-}
 
 h1 {
   font-size: 2em;
