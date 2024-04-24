@@ -1,28 +1,31 @@
  <div class="container-wrapper">
-      <header class="header-container">
-        <div class="logo">
-          {{#link 'help_center'}}
+    <header class="header-container">
+      <div class="logo">
+        {{#link 'help_center'}}
           <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-          {{/link}}
-        </div>
-        <nav class="user-nav" id="user-nav">
-          {{link 'community'}}
-          {{link 'new_request' class='submit-a-request'}}
-          {{#if signed_in}}
+        {{/link}}
+      </div>
+      <nav class="user-nav" id="user-nav">
+        {{link 'community'}}
+        {{link 'new_request' class='submit-a-request'}}
+          <i class="fas fa-envelope"></i> {{t 'submit_a_request'}}
+        {{/link}}
+        {{#if signed_in}}
           <div class="user-info dropdown">
             {{user_avatar class="user-avatar"}}
             <span class="user-name">{{user_name}}</span>
             <div class="dropdown-menu" role="menu">
               {{link "my_activities" role="menuitem"}}
-
+                <i class="fas fa-ticket-alt"></i> {{t 'my_tickets'}}
+              {{/link}}
               {{link "sign_out" role="menuitem"}}
             </div>
           </div>
-          {{else}}
+        {{else}}
           {{#link "sign_in" class="sign-in"}}{{t 'sign_in'}}{{/link}}
-          {{/if}}
-        </nav>
-      </header>
+        {{/if}}
+      </nav>
+    </header>
 
       <main role="main">
         <div class="container">

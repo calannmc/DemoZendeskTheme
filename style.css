@@ -52,7 +52,12 @@ html {
   
   .search input[type='search'] {
     width: 100%;
+    border: solid 1px #ddd;
   }
+}
+
+.user-nav a i {
+  margin-right: 5px;
 }
 
 body {
