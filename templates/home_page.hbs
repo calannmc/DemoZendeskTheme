@@ -7,10 +7,12 @@
       </div>
       <nav class="user-nav" id="user-nav">
         {{#link 'community'}}
-          <i class="fas fa-users" title="{{t 'community'}}"></i>
+          <i class="fas fa-users"</i>
+          <span class="nav-title">{{t 'community'}}</span>
         {{/link}}
         {{#link 'new_request' class='submit-a-request'}}
-          <i class="fas fa-envelope" title="{{t 'submit_a_request'}}"></i>
+          <i class="fas fa-envelope"></i>
+          <span class="nav-title">{{t 'submit_a_request'}}</span>
         {{/link}}
         {{#if signed_in}}
           <div class="user-info dropdown">
@@ -18,16 +20,19 @@
             <span class="user-name">{{user_name}}</span>
             <div class="dropdown-menu" role="menu">
               {{#link "my_activities" role="menuitem"}}
-                <i class="fas fa-ticket-alt" title="{{t 'my_tickets'}}"></i>
+                <i class="fas fa-ticket-alt"></i>
+                <span class="nav-title">{{t 'my_tickets'}}</span>
               {{/link}}
               {{#link "sign_out" role="menuitem"}}
-                <i class="fas fa-sign-out-alt" title="{{t 'sign_out'}}"></i>
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-title">{{t 'sign_out'}}</span>
               {{/link}}
             </div>
           </div>
         {{else}}
           {{#link "sign_in" class="sign-in"}}
-            <i class="fas fa-sign-in-alt" title="{{t 'sign_in'}}"></i>
+            <i class="fas fa-sign-in-alt"></i>
+            <span class="nav-title">{{t 'sign_in'}}</span>
           {{/link}}
         {{/if}}
       </nav>

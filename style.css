@@ -54,33 +54,20 @@ html {
     text-decoration: none;
   }
   
-  .user-nav a[title]:hover::after {
-    content: attr(title);
+  .nav-title {
+    visibility: hidden;
+    color: grey;
     position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    font-size: 12px;
     white-space: nowrap;
-    border-radius: 4px;
-    margin-left: 10px;
-    z-index: 1;
-  }
-  
-  .user-nav a[title]:hover::before {
-    content: '';
-    position: absolute;
-    left: 100%;
+    left: 100%; /* Adjust if needed */
     top: 50%;
     transform: translateY(-50%);
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent #333 transparent transparent;
-    margin-left: 5px;
-    z-index: 1;
+    margin-left: 10px; /* Space between icon and text */
+  }
+
+  li:hover .nav-title {
+    visibility: visible;
+    cursor: pointer;
   }
   main {
     flex: 1;
