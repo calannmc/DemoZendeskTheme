@@ -25,62 +25,39 @@ html {
     margin-bottom: 20px;
   }
 
- .user-nav ul {
+  .nav-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
-  }
-  
-  .user-nav li {
-    list-style: none;
-    margin-bottom: 10px; 
-  }
-  
-  .nav-icon {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    text-align: center;
-    position: relative;
-  }
-  
-  .nav-icon i {
-    font-size: 20px;
-    color: #fff;
-    padding: 10px;
+    margin: 10px;
+}
+
+.nav-item i, .user-avatar {
+    display: block; /* Ensure icons and avatars are block-level for proper spacing */
+    width: 40px; /* Control the size of the icons and avatars */
+    height: 40px;
     border-radius: 50%;
-    background-color: #5a32a3;
-  }
-  
-.nav-icon:hover::after {
-    content: attr(title);
-    position: relative;
-    white-space: nowrap;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    z-index: 10;
-  }
-  
-  .nav-icon:hover i {
-    background-color: #5a32a3; 
-  }
-  
-.user-info .dropdown-menu {
-    display: none;
-  }
-  
-  .user-info:hover .dropdown-menu {
-    display: block; 
-    position: absolute;
-    background-color: #ddd;
-  }
+    background-color: #800080; /* Purple background */
+    color: white; /* Icon color */
+    text-align: center;
+    line-height: 40px; /* Vertically center the icon text */
+    transition: background-color 0.3s; /* Smooth transition for the hover effect */
+}
+
+.nav-item i:hover, .user-avatar:hover {
+    background-color: #a74db7; /* Lighter purple on hover */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item i {
+    margin-bottom: 5px; /* Space between the icon and the text */
+}
+
   
 
   main {
