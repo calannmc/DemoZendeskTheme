@@ -1,8 +1,95 @@
-<script src="https://kit.fontawesome.com/a4740dea0d.js" crossorigin="anonymous"></script>
+<style>
+  /* ".inherited-styles-for-exported-element" is a generated class for the inherited styles of the exported element, feel free to rename it. */
+
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+  .inherited-styles-for-exported-element {
+    font-family: 'Inter', Helvetica Neue, Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  input {
+    margin: 0;
+    overflow: visible;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #6b7280;
+  }
+
+  input::placeholder {
+    color: #6b7280;
+  }
+
+  [type=search] {
+    background-color: transparent !important;
+    border-style: none;
+    box-shadow: none !important;
+    height: 59px;
+    outline-offset: -2px;
+    padding-left: 30px;
+    width: 100%;
+  }
+
+  input:focus {
+    outline: 0;
+  }
+
+  input.focus-visible {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  [type=search]::-webkit-search-decoration {
+    appearance: none;
+  }
+
+  input[type=search] {
+    appearance: none;
+    border-radius: 12px;
+    color: #111827;
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 42px;
+    padding-bottom: calc(6px - 1px);
+    padding-right: calc(16px - 1px);
+    padding-top: calc(6px - 1px);
+    transition: border-color .4s cubic-bezier(.17, .67, .54, 1);
+    transition-behavior: normal;
+  }
+
+  input[type=search]:focus, input[type=search]:hover {
+    border-color: #8753d9;
+  }
+
+  input[type=search]:active {
+    border-color: #8753d9;
+  }
+
+</style>
 
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
-
+      <div class="nav-wrapper">
+        {{#if alternative_locales}}
+          <div class="dropdown language-selector">
+            <button class="dropdown-toggle" aria-haspopup="true">
+              <span>{{current_locale.name}}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
+              </svg>
+            </button>
+            <span class="dropdown-menu dropdown-menu-end" role="menu">
+              {{#each alternative_locales}}
+                <a href="{{url}}" rel="nofollow" role="menuitem">
+                  {{name}}
+                </a>
+              {{/each}}
+            </span>
+          </div>
+        {{/if}}
 <div class="container-wrapper">
       <header class="header-container">
         <div class="logo">
