@@ -1,15 +1,25 @@
-/*!
- * Help Center Demo Builder
- *
- * Developed by Marcelo De Bortoli (EMEA Solution Developer)
- * This theme was developed based on the Zendesk Copenhagen theme
- *
- * Theme developed for demo purposes only. Do not share it externally.
- */
-
-@charset "UTF-8";
 /***** Normalize.css *****/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.search-input {
+  padding-left: 24px; /* Adjust according to the icon size */
+}
+
+
+@charset "UTF-8";
+
 html {
   .container-wrapper {
     display: flex;
