@@ -1331,7 +1331,7 @@ input[type="submit"][disabled] {
 }
 
 .search input[type="search"] {
-  border: 1px solid #2e4057;
+  
   border-radius: 0px;
   box-sizing: border-box;
   color: #2e4057;
