@@ -1347,14 +1347,8 @@ input[type="submit"][disabled] {
   padding-left: 20px;
 }
 
-.search input[type="search"]:focus {
 
-  color: #555;
-}
 
-.search-full input[type="search"] {
-  border: 1px solid #ddd;
-}
 
 .search-icon {
   position: relative;
