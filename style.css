@@ -24,7 +24,7 @@ main {
 }
 
 .knowledge-base{
-  display:inline-grid;
+  display:flex;
   margin-top:3rem;
 
 }
