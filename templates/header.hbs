@@ -29,9 +29,9 @@
       </div>
     </li>
     <li>
-      {{#link 'home'}}
+      {{#link 'help_center_root'}}
         <i class="fa-solid fa-house"></i>
-        <span class="icon-title">{{t 'home'}}</span>
+        <span class="icon-title">Home</span>
       {{/link}}
     </li>
     <li>
@@ -44,6 +44,12 @@
       {{#link 'new_request' class='submit-a-request'}}
         <i class="fa-solid fa-envelope"></i>
         <span class="icon-title">{{t 'submit_a_request'}}</span>
+      {{/link}}
+    </li>
+     <li>
+      <a href="https://techwitch.uk">
+        <i class="fa-solid fa-globe"></i>
+        <span class="icon-title">Main website</span>
       {{/link}}
     </li>
     {{#if signed_in}}
