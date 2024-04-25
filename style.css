@@ -55,7 +55,7 @@ main {
 .user-nav a i {
   font-size: 20px;
   color: #fff;
-  background-color: linear-gradient(145deg, #6f42c1, #5a32a3);
+  background-color: linear-gradient(135deg, #4b0082, #800080, #da70d6, #e6e6fa);
   border-radius: 50%;
   padding: 10px;
   transition: background-color 0.3s ease;
@@ -63,7 +63,7 @@ main {
 }
 
 .user-nav a:hover i {
-  background-color: linear-gradient(145deg, #5a32a3, #6f42c1);
+  background-color: linear-gradient(135deg, #4b0082, #800080, #da70d6, #e6e6fa);
 }
 
 .user-nav a:hover {
