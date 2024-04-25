@@ -23,8 +23,8 @@ main {
   flex: 1;
 }
 
-.category-container{
-  display:inline;
+.knowledge-base{
+  display:inline-grid;
   margin-top:3rem;
 
 }
