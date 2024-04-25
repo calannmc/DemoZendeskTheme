@@ -45,9 +45,9 @@ main {
 .user-nav .icon-title {
   display: none;
   position: absolute;
-  right: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  right: calc(100% + 10px); /* Position to the right of the icon */
+  transform: translateY(-50%);
   background-color: #2962ff; /* Blue metallic background color */
   color: #fff;
   padding: 5px 10px;
@@ -55,7 +55,6 @@ main {
   font-size: 12px;
   white-space: nowrap;
   z-index: 1;
-  margin-top: 10px;
 }
 
 .user-nav a:hover .icon-title {
@@ -65,12 +64,12 @@ main {
 .user-nav .icon-title::before {
   content: "";
   position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 50%; /* Adjusted to align with the icon */
+  left: 100%; /* Adjusted to align with the icon */
+  transform: translateY(50%);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent #2962ff transparent;
+  border-color: transparent transparent transparent #2962ff; /* Adjusted to match background color */
 }
 
 .user-nav a {
@@ -91,16 +90,14 @@ main {
   padding: 10px;
   transition: background-color 0.3s ease;
   margin: auto;
-
-  height: 40px; /* Adjust based on your needs */
-  width: 40px; /* Adjust based on your needs */
-
-  box-shadow: inset 0 0 10px #fff; /* Adds a light inner glow */
-  border: 1px solid #e6e6fa; /* Light border for a glossy effect */
+  height: 40px;
+  width: 40px;
+  box-shadow: inset 0 0 10px #fff;
+  border: 1px solid #e6e6fa;
 }
 
 .user-nav a:hover i {
-  box-shadow: inset 0 0 20px #fff, 0 0 20px #e6e6fa; /* More intense glow on hover */
+  box-shadow: inset 0 0 20px #fff, 0 0 20px #e6e6fa;
 }
 
 .user-nav a:hover {
@@ -110,15 +107,27 @@ main {
 .user-nav a[title]:hover::after {
   content: attr(title);
   position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: calc(100% + 10px); /* Position to the right of the icon */
+  transform: translateY(-50%);
   padding: 5px 10px;
-  background-color: #333 !important;
-  color: #fff !important;
+  background-color: #2962ff; /* Blue metallic background color */
+  color: #fff;
   font-size: 12px;
   white-space: nowrap;
   border-radius: 4px;
+  z-index: 1;
+}
+
+.user-nav a[title]:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 50%; /* Adjusted to align with the icon */
+  left: 100%; /* Adjusted to align with the icon */
+  transform: translateY(50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #2962ff; /* Adjusted to match background color */
   z-index: 1;
 }
 
@@ -126,18 +135,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.user-nav a[title]:hover::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #333 transparent;
-  z-index: 1;
 }
 
 
