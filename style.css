@@ -42,10 +42,16 @@ main {
   transform: none;
 }
 
+.user-nav li {
+  position: relative;
+}
 
 .user-nav .icon-title {
   display: none;
   position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #800080;
   color: #fff;
   padding: 5px 10px;
@@ -53,22 +59,22 @@ main {
   font-size: 12px;
   white-space: nowrap;
   z-index: 1;
+  margin-top: 10px;
 }
 
 .user-nav a:hover .icon-title {
-  display: inline-block;
-  margin-left: 10px;
+  display: block;
 }
 
-.user-nav a:hover .icon-title::before {
+.user-nav .icon-title::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: -5px;
-  transform: translateY(-50%);
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #800080 transparent transparent;
+  border-color: transparent transparent #800080 transparent;
 }
 
 .user-nav a {
