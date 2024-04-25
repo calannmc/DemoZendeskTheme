@@ -84,7 +84,7 @@ main {
 
 .user-nav a i {
   font-size: 20px;
-  color: #fff;
+  color: 0 0 20px #fff, 0 0 20px #e6e6fa;;
   background:#4062bb;
   border-radius: 50%;
   padding: 10px;
@@ -97,7 +97,7 @@ main {
 }
 
 .user-nav a:hover i {
-  box-shadow: inset 0 0 20px #fff, 0 0 20px #e6e6fa;
+  box-shadow: 0 0 10px #4062bb;
 }
 
 .user-nav a:hover {
