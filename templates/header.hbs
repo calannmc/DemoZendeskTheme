@@ -26,28 +26,28 @@
                 </div>
             <li>
               {{#link 'community'}}
-                <i class="fas fa-users" title="{{t 'community'}}"></i>
+                <i class="fas fa-users" title="{{t 'community'}}">{{t 'community'}}</i>
               {{/link}}
             </li>
             <li>
               {{#link 'new_request' class='submit-a-request'}}
-                <i class="fas fa-envelope" title="{{t 'submit_a_request'}}"></i>
+                <i class="fas fa-envelope" title="{{t 'submit_a_request'}}">{{t 'submit_a_request'}}</i>
               {{/link}}
             </li>
             {{#if signed_in}}
               <li>
                 {{#link "my_activities"}}
-                  <i class="fas fa-ticket-alt" title="{{t 'requests'}}"></i>
+                  <i class="fas fa-ticket-alt" title="{{t 'requests'}}">{{t 'requests'}}</i>
                 {{/link}}
               </li>
               <li>
                 {{#link "my_activities"}}
-                  <i class="fas fa-history" title="{{t 'activities'}}"></i>
+                  <i class="fas fa-history" title="{{t 'activities'}}">{{t 'activities'}}</i>
                 {{/link}}
             {{else}}
               <li>
                 {{#link "sign_in" class="sign-in"}}
-                  <i class="fas fa-sign-in-alt" title="{{t 'sign_in'}}"></i>
+                  <i class="fas fa-sign-in-alt" title="{{t 'sign_in'}}">{{t 'sign_in'}}</i>
                 {{/link}}
               </li>
             {{/if}}

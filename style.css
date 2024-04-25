@@ -55,7 +55,7 @@ main {
 .user-nav a i {
   font-size: 20px;
   color: #fff;
-  background-color: #6f42c1;
+  background-color: linear-gradient(145deg, #6f42c1, #5a32a3);
   border-radius: 50%;
   padding: 10px;
   transition: background-color 0.3s ease;
@@ -63,7 +63,7 @@ main {
 }
 
 .user-nav a:hover i {
-  background-color: #5a32a3;
+  background-color: linear-gradient(145deg, #5a32a3, #6f42c1);
 }
 
 .user-nav a:hover {
@@ -1193,6 +1193,7 @@ input[type='submit'][disabled] {
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+  border: solid 1px ##6f42c1;
 }
 
 .avatar {
