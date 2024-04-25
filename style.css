@@ -49,8 +49,8 @@ main {
 .user-nav .icon-title {
   display: none;
   position: absolute;
-  top: 50%;
-  right: 100%;
+  top: 100%;
+  left: 50%;
   transform: translateX(-50%);
   background-color: #800080;
   color: #fff;
@@ -69,8 +69,8 @@ main {
 .user-nav .icon-title::before {
   content: '';
   position: absolute;
-  left: 100%;
-  top: 50%;
+  bottom: 100%;
+  left: 50%;
   transform: translateX(-50%);
   border-width: 5px;
   border-style: solid;
@@ -81,10 +81,7 @@ main {
   position: relative;
   display:inline-block
 }
-.user-nav li {
-  display: block;
-  margin: 10px;
-}
+
 #metallic-purple-gradient a i {
   background: linear-gradient(135deg, #4B0082, #800080, #DA70D6, #E6E6FA);
   height: 40px; /* Adjust based on your needs */
