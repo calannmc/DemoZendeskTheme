@@ -43,6 +43,15 @@ main {
 }
 
 
+.user-nav .icon-title {
+  display: none;
+  margin-left: 5px;
+}
+
+.user-nav a:hover .icon-title {
+  display: inline-block;
+}
+
 .user-nav a {
   position: relative;
   margin-right: 10px;

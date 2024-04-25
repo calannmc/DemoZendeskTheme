@@ -14,43 +14,51 @@
             <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
           {{/link}}
         </div>
-        <nav class="user-nav" id="metallic-purple-gradient">
-          <ul>
-             <li class="user-info dropdown">
-                {{user_avatar class="user-avatar"}}
-                <span class="user-name">{{user_name}}</span>
-                <div class="dropdown-menu" role="menu">
-                  {{#link "sign_out" role="menuitem"}}
-                    <i class="fas fa-sign-out-alt" title="{{t 'sign_out'}}"></i>
-                  {{/link}}
-                </div>
-            <li>
-              {{#link 'community'}}
-                <i class="fas fa-users" title="{{t 'community'}}"></i>
-              {{/link}}
-            </li>
-            <li>
-              {{#link 'new_request' class='submit-a-request'}}
-                <i class="fas fa-envelope" title="{{t 'submit_a_request'}}"></i>
-              {{/link}}
-            </li>
-            {{#if signed_in}}
-              <li>
-                {{#link "my_activities"}}
-                  <i class="fas fa-ticket-alt" title="{{t 'requests'}}"></i>
-                {{/link}}
-              </li>
-              <li>
-                {{#link "my_activities"}}
-                  <i class="fas fa-history" title="{{t 'activities'}}"></i>
-                {{/link}}
-            {{else}}
-              <li>
-                {{#link "sign_in" class="sign-in"}}
-                  <i class="fas fa-sign-in-alt" title="{{t 'sign_in'}}"></i>
-                {{/link}}
-              </li>
-            {{/if}}
-          </ul>
-        </nav>
+       <nav class="user-nav" id="metallic-purple-gradient">
+  <ul>
+    <li class="user-info dropdown">
+      {{user_avatar class="user-avatar"}}
+      <span class="user-name">{{user_name}}</span>
+      <div class="dropdown-menu" role="menu">
+        {{#link "sign_out" role="menuitem"}}
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="icon-title">{{t 'sign_out'}}</span>
+        {{/link}}
+      </div>
+    </li>
+    <li>
+      {{#link 'community'}}
+        <i class="fas fa-users"></i>
+        <span class="icon-title">{{t 'community'}}</span>
+      {{/link}}
+    </li>
+    <li>
+      {{#link 'new_request' class='submit-a-request'}}
+        <i class="fas fa-envelope"></i>
+        <span class="icon-title">{{t 'submit_a_request'}}</span>
+      {{/link}}
+    </li>
+    {{#if signed_in}}
+      <li>
+        {{#link "my_activities"}}
+          <i class="fas fa-ticket-alt"></i>
+          <span class="icon-title">{{t 'requests'}}</span>
+        {{/link}}
+      </li>
+      <li>
+        {{#link "my_activities"}}
+          <i class="fas fa-history"></i>
+          <span class="icon-title">{{t 'activities'}}</span>
+        {{/link}}
+      </li>
+    {{else}}
+      <li>
+        {{#link "sign_in" class="sign-in"}}
+          <i class="fas fa-sign-in-alt"></i>
+          <span class="icon-title">{{t 'sign_in'}}</span>
+        {{/link}}
+      </li>
+    {{/if}}
+  </ul>
+</nav>
       </header>
