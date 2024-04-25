@@ -23,9 +23,11 @@ main {
   flex: 1;
 }
 
-.knowledge-base{
+.category-container{
   display:inline;
   margin-top:3rem;
+  height:auto;
+  width:33%;
 }
 
 .hero {
