@@ -46,7 +46,7 @@ main {
   display: none;
   position: absolute;
   top: 50%;
-  right: calc(100% + 10px); /* Position to the right of the icon */
+  left: calc(100% + 10px); /* Position to the right of the icon */
   transform: translateY(-50%);
   background-color: #2962ff; /* Blue metallic background color */
   color: #fff;
@@ -65,11 +65,11 @@ main {
   content: "";
   position: absolute;
   bottom: 50%; /* Adjusted to align with the icon */
-  left: 100%; /* Adjusted to align with the icon */
+  right: 100%; /* Adjusted to align with the icon */
   transform: translateY(50%);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent transparent #2962ff; /* Adjusted to match background color */
+  border-color: transparent #2962ff transparent transparent; /* Adjusted to match background color */
 }
 
 .user-nav a {
@@ -108,7 +108,7 @@ main {
   content: attr(title);
   position: absolute;
   top: 50%;
-  left: calc(100% + 10px); /* Position to the right of the icon */
+  right: calc(100% + 10px); /* Position to the right of the icon */
   transform: translateY(-50%);
   padding: 5px 10px;
   background-color: #2962ff; /* Blue metallic background color */
@@ -123,11 +123,11 @@ main {
   content: "";
   position: absolute;
   bottom: 50%; /* Adjusted to align with the icon */
-  left: 100%; /* Adjusted to align with the icon */
+  right: 100%; /* Adjusted to align with the icon */
   transform: translateY(50%);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent transparent #2962ff; /* Adjusted to match background color */
+  border-color: transparent #2962ff transparent transparent; /* Adjusted to match background color */
   z-index: 1;
 }
 
