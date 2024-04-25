@@ -1,3 +1,5 @@
+<script src="https://kit.fontawesome.com/a4740dea0d.js" crossorigin="anonymous"></script>
+
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
 <header class="header-container">
@@ -14,47 +16,47 @@
             <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
           {{/link}}
         </div>
-       <nav class="user-nav" id="metallic-purple-gradient">
+       <nav class="user-nav" id="user-nav">
   <ul>
     <li class="user-info dropdown">
       {{user_avatar class="user-avatar"}}
       <span class="user-name">{{user_name}}</span>
       <div class="dropdown-menu" role="menu">
         {{#link "sign_out" role="menuitem"}}
-          <i class="fas fa-sign-out-alt"></i>
+          <i class="fa-solid fa-right-to-bracket"></i>
           <span class="icon-title">{{t 'sign_out'}}</span>
         {{/link}}
       </div>
     </li>
     <li>
       {{#link 'community'}}
-        <i class="fas fa-users"></i>
+        <i class="fa-solid fa-users"></i>
         <span class="icon-title">{{t 'community'}}</span>
       {{/link}}
     </li>
     <li>
       {{#link 'new_request' class='submit-a-request'}}
-        <i class="fas fa-envelope"></i>
+        <i class="fa-solid fa-envelope"></i>
         <span class="icon-title">{{t 'submit_a_request'}}</span>
       {{/link}}
     </li>
     {{#if signed_in}}
       <li>
         {{#link "my_activities"}}
-          <i class="fas fa-ticket-alt"></i>
+          <i class="fa-solid fa-ticket"></i>
           <span class="icon-title">{{t 'requests'}}</span>
         {{/link}}
       </li>
       <li>
         {{#link "my_activities"}}
-          <i class="fas fa-history"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
           <span class="icon-title">{{t 'activities'}}</span>
         {{/link}}
       </li>
     {{else}}
       <li>
         {{#link "sign_in" class="sign-in"}}
-          <i class="fas fa-sign-in-alt"></i>
+          <i class="fa-solid fa-right-to-bracket"></i>
           <span class="icon-title">{{t 'sign_in'}}</span>
         {{/link}}
       </li>
