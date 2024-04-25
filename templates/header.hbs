@@ -2,15 +2,15 @@
 
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
+<header class="header-container">
 
-<div>
-            
+           
               {{search submit=false instant=settings.instant_search class='search search-full'}}
-            </div>
+            
    
-
+</header>
 <div class="container-wrapper">
-
+      <header class="header-container">
         <div class="logo">
           {{#link 'help_center'}}
             <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
@@ -28,7 +28,7 @@
         {{/link}}
       </div>
     </li>
-
+  
     <li>
       {{#link 'community'}}
         <i class="fa-solid fa-users"></i>
@@ -70,5 +70,4 @@
     {{/if}}
   </ul>
 </nav>
-</div>
-
+      </header>
