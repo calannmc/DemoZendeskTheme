@@ -81,20 +81,20 @@ main {
   display: block;
   margin: 10px;
 }
-#metallic-purple-gradient a i {
+/*#metallic-purple-gradient a i {
   background: linear-gradient(316deg, #dbcbd8, 0%, #2e4057 74%);
-  height: 40px; /* Adjust based on your needs */
-  width: 40px; /* Adjust based on your needs */
-  border-radius: 50px; /* Optional, for rounded corners */
-  box-shadow: inset 0 0 10px #fff; /* Adds a light inner glow */
-  border: 1px solid #e6e6fa; /* Light border for a glossy effect */
+  height: 40px; 
+  width: 40px; 
+  border-radius: 50px; 
+  box-shadow: inset 0 0 10px #fff; 
+  border: 1px solid #e6e6fa; 
   margin: auto;
 }
 
-/* Optionally, add a hover effect to enhance interactivity */
+
 #metallic-purple-gradient a i:hover {
-  box-shadow: inset 0 0 20px #fff, 0 0 20px #e6e6fa; /* More intense glow on hover */
-}
+  box-shadow: inset 0 0 20px #fff, 0 0 20px #e6e6fa; 
+}*/
 .user-nav a i {
   font-size: 20px;
   color: #fff;
@@ -112,7 +112,7 @@ main {
 }
 
 .user-nav a:hover i {
-  background: linear-gradient(316deg, #dbcbd8, 0%, #2e4057 74%);
+  box-shadow: inset 0 0 20px #fff, 0 0 20px #e6e6fa; /* More intense glow on hover */
 }
 
 .user-nav a:hover {
