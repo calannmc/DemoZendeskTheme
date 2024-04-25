@@ -24,8 +24,8 @@ main {
 }
 
 .knowledge-base{
-  display:flex;
-  margin-top:20px;
+  display:inline;
+  margin-top:3rem;
 }
 
 .hero {
