@@ -1634,8 +1634,7 @@ input[type="submit"][disabled] {
 }
 
 .blocks-item-description {
-  display:block;
-  display: $blocks_description;
+  display: block;
   font-weight: 300;
   margin: 0;
 }
@@ -1657,8 +1656,10 @@ input[type="submit"][disabled] {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
-.knowledge-base .blocks-item:nth-child(10n + 1) .blocks-item-link:before {
+.knowledgebase{
+  margin-top:20px;
+}
+.knowledge-base ..blocks-item:nth-child(10n + 1) .blocks-item-link:before {
   background-image: url("$blocks_icon_1");
 }
 
