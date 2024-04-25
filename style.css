@@ -1330,7 +1330,7 @@ input[type="submit"][disabled] {
 
 /***** Search field *****/
 .search {
-  position: relative;
+  width: 100%; /* Ensures the search container spans the full width */
 }
 
 .search input[type="search"] {
@@ -1341,7 +1341,7 @@ input[type="submit"][disabled] {
   padding-left: 40px;
   padding-right: 20px;
   -webkit-appearance: none;
-  width: 100%;
+  width: calc(100% - 55px); /* Adjusted width to account for icon and padding */
 }
 
 [dir="rtl"] .search input[type="search"] {
@@ -1350,17 +1350,25 @@ input[type="submit"][disabled] {
 }
 
 .search-icon {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   position: absolute;
   left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #777;
   z-index: 1;
+}
+
+[dir="rtl"] .search-icon {
+  right: 15px;
+  left: auto;
 }
 
 .search-container {
   position: relative;
 }
+
 
 .search-icon {
   position: absolute;
