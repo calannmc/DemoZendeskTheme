@@ -86,7 +86,7 @@ main {
   font-size: 20px;
   color: #fff;
   background-color:4062bb;
-  background: linear-gradient(316deg, #4062bb, 0%, #5200ae 74%); /* Blue metallic gradient */
+  background: linear-gradient(316deg, #4062bb, 0%, #5200ae, 74%); /* Blue metallic gradient */
   border-radius: 50%;
   padding: 10px;
   transition: background-color 0.3s ease;
@@ -112,7 +112,7 @@ main {
   right: calc(100% + 10px); /* Position to the right of the icon */
   transform: translateY(-50%);
   padding: 5px 10px;
-  background-color: #2962ff; /* Blue metallic background color */
+  background-color: #4062bb; /* Blue metallic background color */
   color: #fff;
   font-size: 12px;
   white-space: nowrap;
