@@ -47,7 +47,7 @@ main {
   display: none;
   position: absolute;
   right: 100%;
- 
+  left: 50%;
   transform: translateX(-50%);
   background-color: #800080;
   color: #fff;
