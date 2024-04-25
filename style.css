@@ -1,18 +1,8 @@
-/***** Normalize.css *****/
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-.header-container {
-  width: 100%; /* Ensures the header container fills the width */
-  display: flex; /* Utilizes flexbox for internal alignment */
-  justify-content: center; /* Centers the content horizontally */
-  padding: 20px 0; /* Provides padding around the content */
-}
-
-
 
 
 @charset "UTF-8";
-
+/***** Normalize.css *****/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   .container-wrapper {
     display: flex;
@@ -1330,10 +1320,11 @@ input[type="submit"][disabled] {
 
 /***** Search field *****/
 .search {
-  width: 100%; /* Ensures the search container spans the full width */
+  position: relative;
 }
 
 .search input[type="search"] {
+  
   border-radius: 0px;
   box-sizing: border-box;
   color: #2e4057;
@@ -1341,52 +1332,13 @@ input[type="submit"][disabled] {
   padding-left: 40px;
   padding-right: 20px;
   -webkit-appearance: none;
-  width: calc(100% - 55px); /* Adjusted width to account for icon and padding */
+  width: 100%;
 }
 
 [dir="rtl"] .search input[type="search"] {
   padding-right: 40px;
   padding-left: 20px;
 }
-
-.search-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  color: #777;
-  z-index: 1;
-}
-
-[dir="rtl"] .search-icon {
-  right: 15px;
-  left: auto;
-}
-
-.search-container {
-  position: relative;
-}
-
-
-.search-icon {
-  position: absolute;
-  left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.search-input.search-full {
-  width: 100%;
-}
-
-/* Additional styles for instant search */
-.search.instant {
-  /* Add styles for instant search if needed */
-}
-
 
 
 
