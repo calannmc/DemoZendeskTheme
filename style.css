@@ -79,7 +79,7 @@ main {
 
 .user-nav a {
   position: relative;
-  margin-right: 10px;
+  display:inline-block
 }
 .user-nav li {
   display: block;
