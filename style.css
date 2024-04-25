@@ -49,7 +49,7 @@ main {
   left: calc(100% + 10px); /* Position to the right of the icon */
   transform: translateY(-50%);
   background-color: #2962ff; /* Blue metallic background color */
-  color: radial-gradient(316deg, #4062bb 0% #5200ae 74%);
+  color: #fff;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 12px;
@@ -84,8 +84,7 @@ main {
 
 .user-nav a i {
   font-size: 20px;
-  color: #fff;
-  background-color:#4062bb;
+  color: radial-gradient(316deg, #4062bb 0% #5200ae 74%);
   background:#4062bb;
   border-radius: 50%;
   padding: 10px;
