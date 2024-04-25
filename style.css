@@ -53,8 +53,8 @@ main {
 }
 #metallic-purple-gradient a i {
   background: linear-gradient(135deg, #4B0082, #800080, #DA70D6, #E6E6FA);
-  height: 300px; /* Adjust based on your needs */
-  width: 300px;  /* Adjust based on your needs */
+  height: 40px; /* Adjust based on your needs */
+  width: 40px;  /* Adjust based on your needs */
   border-radius: 50px; /* Optional, for rounded corners */
   box-shadow: inset 0 0 10px #fff; /* Adds a light inner glow */
   border: 1px solid #E6E6FA; /* Light border for a glossy effect */
@@ -1205,7 +1205,7 @@ input[type='submit'][disabled] {
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-  border: solid 1px ##6f42c1;
+  border: solid 2px #800080;
 }
 
 .avatar {
