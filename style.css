@@ -84,7 +84,7 @@ main {
 
 .user-nav a i {
   font-size: 20px;
-  color: radial-gradient(316deg, #4062bb 0% #5200ae 74%);
+  color: linear-gradient(316deg, #fff 0% #4062bb 74%);
   background:#4062bb;
   border-radius: 50%;
   padding: 10px;
@@ -92,8 +92,8 @@ main {
   margin: auto;
   height: 40px;
   width: 40px;
-  box-shadow: inset 0 0 10px #fff;
-  border: 1px solid #e6e6fa;
+  /*box-shadow: inset 0 0 10px #fff;*/
+  border: 1px solid #4062bb;
 }
 
 .user-nav a:hover i {
