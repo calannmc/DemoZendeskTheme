@@ -83,7 +83,7 @@ main {
   margin: 10px;
 }
 #metallic-purple-gradient a i {
-  background: linear-gradient(135deg, #4B0082, #800080, #DA70D6, #E6E6FA);
+  background: linear-gradient(316deg, #dbcbd8, 0%, #2e4057 74%);
   height: 40px; /* Adjust based on your needs */
   width: 40px;  /* Adjust based on your needs */
   border-radius: 50px; /* Optional, for rounded corners */
@@ -107,7 +107,7 @@ main {
 }
 
 .user-nav a:hover i {
-  background-color: linear-gradient(135deg, #4b0082, #800080, #da70d6, #e6e6fa);
+  background: linear-gradient(316deg, #dbcbd8, 0%, #2e4057 74%);
 }
 
 .user-nav a:hover {
