@@ -26,8 +26,7 @@ main {
 .category-container{
   display:inline;
   margin-top:3rem;
-  height:auto;
-  width:33%;
+ wdith:100%;
 }
 
 .hero {
