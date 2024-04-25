@@ -23,6 +23,13 @@ main {
   flex: 1;
 }
 
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .hero {
   background-image: none;
   height: auto;
