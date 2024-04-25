@@ -49,8 +49,8 @@ main {
 .user-nav .icon-title {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 50%;
+  right: 100%;
   transform: translateX(-50%);
   background-color: #800080;
   color: #fff;
@@ -69,8 +69,8 @@ main {
 .user-nav .icon-title::before {
   content: '';
   position: absolute;
-  bottom: 100%;
-  left: 50%;
+  left: 100%;
+  top: 50%;
   transform: translateX(-50%);
   border-width: 5px;
   border-style: solid;
