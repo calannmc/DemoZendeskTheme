@@ -42,15 +42,12 @@ main {
   transform: none;
 }
 
-.user-nav li {
-  position: relative;
-}
 
 .user-nav .icon-title {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 50%;
+  right: 100%;
+ 
   transform: translateX(-50%);
   background-color: #800080;
   color: #fff;
@@ -81,7 +78,10 @@ main {
   position: relative;
   display:inline-block
 }
-
+.user-nav li {
+  display: block;
+  margin: 10px;
+}
 #metallic-purple-gradient a i {
   background: linear-gradient(135deg, #4B0082, #800080, #DA70D6, #E6E6FA);
   height: 40px; /* Adjust based on your needs */
