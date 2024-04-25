@@ -23,12 +23,7 @@ main {
   flex: 1;
 }
 
-.search{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
+
 
 .hero {
   background-image: none;
@@ -1334,7 +1329,7 @@ input[type="submit"][disabled] {
   
   border-radius: 0px;
   box-sizing: border-box;
-  color: #2e4057;
+  border-bottom: 1px solid #ddd;
   height: 60px;
   padding-left: 40px;
   padding-right: 20px;
