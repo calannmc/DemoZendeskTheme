@@ -1330,6 +1330,9 @@ input[type="submit"][disabled] {
   border-radius: 0px;
   box-sizing: border-box;
   border-bottom: 1px solid #ddd;
+  border-top:none;
+  border-left:none;
+  border-right:none;
   height: 60px;
   padding-left: 40px;
   padding-right: 20px;
