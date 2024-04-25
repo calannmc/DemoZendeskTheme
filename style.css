@@ -74,7 +74,9 @@ main {
 
 .user-nav a {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .user-nav li {
