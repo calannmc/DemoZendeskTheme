@@ -23,7 +23,7 @@
       <span class="user-name">{{user_name}}</span>
       <div class="dropdown-menu" role="menu">
         {{#link "sign_out" role="menuitem"}}
-          <i class="fa-solid fa-right-to-bracket"></i>
+          <i class="fa-solid fa-mobile-screen-button"></i>
           <span class="icon-title">{{t 'sign_out'}}</span>
         {{/link}}
       </div>
@@ -42,9 +42,9 @@
     </li>
     {{#if signed_in}}
       <li>
-        {{#link "my_activities"}}
-          <i class="fa-solid fa-ticket"></i>
-          <span class="icon-title">{{t 'requests'}}</span>
+        {{#link "change_password"}}
+          <i class="fa-solid fa-lock"></i>
+          <span class="icon-title">{{t 'change_password'}}</span>
         {{/link}}
       </li>
       <li>
@@ -56,7 +56,7 @@
     {{else}}
       <li>
         {{#link "sign_in" class="sign-in"}}
-          <i class="fa-solid fa-right-to-bracket"></i>
+          <i class="fa-solid fa-mobile-screen-button"></i>
           <span class="icon-title">{{t 'sign_in'}}</span>
         {{/link}}
       </li>

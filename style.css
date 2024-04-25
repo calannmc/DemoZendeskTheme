@@ -52,7 +52,7 @@ main {
   color: #fff;
   padding: 5px 10px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
   white-space: nowrap;
   z-index: 1;
 }
@@ -84,7 +84,7 @@ main {
 
 .user-nav a i {
   font-size: 20px;
-  color: linear-gradient(316deg, #fff 0% #4062bb 74%);
+  color: #fff;
   background:#4062bb;
   border-radius: 50%;
   padding: 10px;
