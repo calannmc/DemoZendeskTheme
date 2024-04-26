@@ -1241,6 +1241,83 @@
       ]
     },
     {
+      "label": "Demo - Section",
+      "variables": [
+        {
+          "identifier": "section_card_icon_1",
+          "type": "file",
+          "description": "Icon for the first section card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_1_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_2",
+          "type": "file",
+          "description": "Icon for the second section card",
+          "label": "Card_Icon_2"
+        },
+        {
+          "identifier": "section_card_icon_2_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_3",
+          "type": "file",
+          "description": "Icon for the third section card",
+          "label": "Card_Icon_3"
+        },
+        {
+          "identifier": "section_card_icon_3_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_4",
+          "type": "file",
+          "description": "Icon for the forth section card",
+          "label": "Card_Icon_4"
+        },
+        {
+          "identifier": "section_card_icon_4_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_5",
+          "type": "file",
+          "description": "Icon for the fifth section card",
+          "label": "Card_Icon_5"
+        },
+        {
+          "identifier": "section_card_icon_5_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_6",
+          "type": "file",
+          "description": "Icon for the sixth section card",
+          "label": "Card_Icon_6"
+        },
+        {
+          "identifier": "section_card_icon_6_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        }
+      ]
+    },
+    {
       "label": "Community post elements",
       "variables": [
         {
