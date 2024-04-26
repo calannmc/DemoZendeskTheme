@@ -1120,7 +1120,7 @@ input[type="submit"][disabled] {
 }
 .footer-logo{
   max-height: 3rem;
-  max-width:auto;
+  max-width:3rem;
 }
 .skip-navigation {
   align-items: center;
