@@ -2,10 +2,818 @@
   "name": "DemoZendeskTheme",
   "author": "Carole McNally",
 
-  "version": "3.8.5",
+  "version": "3.8.6",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
+
+    {
+      "label": "Search bar",
+      "variables": [
+        {
+          "identifier": "header_search",
+          "type": "file",
+          "description": "Icon for header search bar.",
+          "label": "header_search"
+        },
+        {
+          "identifier": "search_icon",
+          "type": "file",
+          "description": "Icon for search bar",
+          "label": "search_icon"
+        }
+      ]
+    },
+    {
+      "label": "Hero Banner",
+      "variables": [
+        {
+          "identifier": "hero_banner_text",
+          "type": "text",
+          "description": "Text for the homepage hero banner",
+          "label": "Hero Banner Text",
+          "value": "How can we help?"
+        },
+        {
+          "identifier": "hero_banner_description",
+          "type": "text",
+          "description": "Description for the homepage hero banner",
+          "label": "Hero Banner Description",
+          "value": "Search for Anchore content in the box below"
+        },
+        {
+          "identifier": "hero_banner_image",
+          "type": "file",
+          "description": "Image for the homepage hero banner",
+          "label": "Hero banner Image"
+        },
+        {
+          "identifier": "cta_one_title",
+          "type": "text",
+          "description": "Title for CTA1",
+          "label": "CTA1 Title",
+          "value": "Open a Ticket"
+        },
+        {
+          "identifier": "cta_one",
+          "type": "text",
+          "description": "URL for the CTA",
+          "label": "CTA1 URL",
+          "value": "https://support.anchore.com/hc/en-us/requests/new"
+        },
+        {
+          "identifier": "cta_two_title",
+          "type": "text",
+          "description": "Title for CTA2",
+          "label": "CTA2 Title",
+          "value": ""
+        },
+        {
+          "identifier": "cta_two",
+          "type": "text",
+          "description": "URL for the CTA",
+          "label": "CTA2 URL",
+          "value": ""
+        },
+        {
+          "identifier": "header_one_title",
+          "type": "text",
+          "description": "Title for header link",
+          "label": "Header Title",
+          "value": ""
+        },
+        {
+          "identifier": "header_one",
+          "type": "text",
+          "description": "URL for the header link",
+          "label": "HEADER URL",
+          "value": ""
+        },
+        {
+          "identifier": "header_two_title",
+          "type": "text",
+          "description": "Title for header link",
+          "label": "Header Title",
+          "value": ""
+        },
+        {
+          "identifier": "header_two",
+          "type": "text",
+          "description": "URL for the header link",
+          "label": "HEADER URL",
+          "value": ""
+        },
+        {
+          "identifier": "header_three_title",
+          "type": "text",
+          "description": "Title for header link",
+          "label": "Header Title",
+          "value": ""
+        },
+        {
+          "identifier": "header_three",
+          "type": "text",
+          "description": "URL for the header link",
+          "label": "HEADER URL",
+          "value": ""
+        },
+        {
+          "identifier": "header_four_title",
+          "type": "text",
+          "description": "Title for header link",
+          "label": "Header Title",
+          "value": ""
+        },
+        {
+          "identifier": "header_four",
+          "type": "text",
+          "description": "URL for the header link",
+          "label": "HEADER URL",
+          "value": ""
+        },
+        {
+          "identifier": "header_five_title",
+          "type": "text",
+          "description": "Title for header link",
+          "label": "Header Title",
+          "value": ""
+        },
+        {
+          "identifier": "header_five",
+          "type": "text",
+          "description": "URL for the header link",
+          "label": "HEADER URL",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "label": "News",
+      "variables": [
+        {
+          "identifier": "news_title",
+          "type": "text",
+          "description": "Title for news",
+          "label": "news_title",
+          "value": "Latest News"
+        },
+        {
+          "identifier": "news_content",
+          "type": "text",
+          "description": "news content",
+          "label": "news_content",
+          "value": "Anchore Enterprise v5.4.1 is released! "
+        }
+      ]
+    },
+    {
+      "label": "Custom Tiles",
+      "variables": [
+        {
+          "identifier": "video_tile_image",
+          "type": "file",
+          "description": "Image for the video tile",
+          "label": "Video Tile Image"
+        },
+        {
+          "identifier": "video_tile_title",
+          "type": "text",
+          "description": "Title for video tile",
+          "label": "Video Tile Title",
+          "value": "Anchore Videos"
+        },
+        {
+          "identifier": "video_tile_description",
+          "type": "text",
+          "description": "Description for the video tile",
+          "label": "Video Tile Description",
+          "value": "Recordings from prior Anchore webinars on best practice and implementation"
+        },
+        {
+          "identifier": "video_tile_url",
+          "type": "text",
+          "description": "URL for the video tile",
+          "label": "Video Tile URL",
+          "value": "https://vimeo.com/anchore"
+        },
+        {
+          "identifier": "tile_1",
+          "type": "file",
+          "description": "Icon for the first tile",
+          "label": "Tile 1"
+        },
+        {
+          "identifier": "tile_1_title",
+          "type": "text",
+          "description": "Title for the first tile",
+          "label": "Tile 1 Title",
+          "value": "Support Lifecycle"
+        },
+        {
+          "identifier": "tile_1_description",
+          "type": "text",
+          "description": "Description for the first tile",
+          "label": "Tile 1 Description",
+          "value": "Support lifecycle information for Anchore Enterprise releases. "
+        },
+        {
+          "identifier": "tile_1_url",
+          "type": "text",
+          "description": "URL for the first tile",
+          "label": "Tile 1 URL",
+          "value": "https://support.anchore.com/hc/en-us/articles/28208861979923-Anchore-Enterprise-Support-Lifecycle"
+        },
+        {
+          "identifier": "tile_2",
+          "type": "file",
+          "description": "Icon for the second tile",
+          "label": "Tile 2"
+        },
+        {
+          "identifier": "tile_2_title",
+          "type": "text",
+          "description": "Title for the second tile",
+          "label": "Tile 2 Title",
+          "value": "Release Notes"
+        },
+        {
+          "identifier": "tile_2_description",
+          "type": "text",
+          "description": "Description for the second tile",
+          "label": "Tile 2 Description",
+          "value": "Release Notes containing new features and resolved issues for all Anchore Enterprise versions"
+        },
+        {
+          "identifier": "tile_2_url",
+          "type": "text",
+          "description": "URL for the second tile",
+          "label": "Tile 2 URL",
+          "value": "https://docs.anchore.com/current/docs/releasenotes/"
+        },
+        {
+          "identifier": "tile_3",
+          "type": "file",
+          "description": "Icon for the third tile",
+          "label": "Tile 3"
+        },
+        {
+          "identifier": "tile_3_title",
+          "type": "text",
+          "description": "Title for the third tile",
+          "label": "Tile 3 Title",
+          "value": "Licensing"
+        },
+        {
+          "identifier": "tile_3_description",
+          "type": "text",
+          "description": "Description for the third tile",
+          "label": "Tile 3 Description",
+          "value": "Information regarding your Anchore Enterprise license"
+        },
+        {
+          "identifier": "tile_3_url",
+          "type": "text",
+          "description": "URL for the third tile",
+          "label": "Tile 3 URL",
+          "value": "https://support.anchore.com/hc/en-us/categories/27405136587667-Licensing-Billing"
+        },
+        {
+          "identifier": "tile_4",
+          "type": "file",
+          "description": "Icon for the fourth tile",
+          "label": "Tile 4"
+        },
+        {
+          "identifier": "tile_4_title",
+          "type": "text",
+          "description": "Title for the fourth tile",
+          "label": "Tile 4 Title",
+          "value": "v2 API Browser"
+        },
+        {
+          "identifier": "tile_4_description",
+          "type": "text",
+          "description": "Description for the fourth tile",
+          "label": "Tile 4 Description",
+          "value": "Browse the Anchore V2 API"
+        },
+        {
+          "identifier": "tile_4_url",
+          "type": "text",
+          "description": "URL for the fourth tile",
+          "label": "Tile 4 URL",
+          "value": "https://docs.anchore.com/current/docs/api/v2/reference/"
+        },
+        {
+          "identifier": "tile_5",
+          "type": "file",
+          "description": "Icon for the fifth tile",
+          "label": "Tile 5"
+        },
+        {
+          "identifier": "tile_5_title",
+          "type": "text",
+          "description": "Title for the fifth tile",
+          "label": "Tile 5 Title",
+          "value": "Anchore Documentation"
+        },
+        {
+          "identifier": "tile_5_description",
+          "type": "text",
+          "description": "Description for the fifth tile",
+          "label": "Tile 5 Description",
+          "value": "Version specific documentation for Anchore Enterprise releases"
+        },
+        {
+          "identifier": "tile_5_url",
+          "type": "text",
+          "description": "URL for the fifth tile",
+          "label": "Tile 5 URL",
+          "value": "https://docs.anchore.com/current/docs/"
+        },
+        {
+          "identifier": "tile_6",
+          "type": "file",
+          "description": "Icon for the sixth tile",
+          "label": "Tile 6"
+        },
+        {
+          "identifier": "tile_6_title",
+          "type": "text",
+          "description": "Title for the sixth tile",
+          "label": "Tile 6 Title",
+          "value": "Feed Health"
+        },
+        {
+          "identifier": "tile_6_description",
+          "type": "text",
+          "description": "Description for the sixth tile",
+          "label": "Tile 6 Description",
+          "value": "Validate vulnerability feed health for your Anchore Enterprise deployment"
+        },
+        {
+          "identifier": "tile_6_url",
+          "type": "text",
+          "description": "URL for the sixth tile",
+          "label": "Tile 6 URL",
+          "value": "https://docs.anchore.com/current/docs/troubleshooting/#verifying-feeds"
+        },
+        {
+          "identifier": "tile_7",
+          "type": "file",
+          "description": "Icon for the seventh tile",
+          "label": "Tile 7"
+        },
+        {
+          "identifier": "tile_7_title",
+          "type": "text",
+          "description": "Title for the seventh tile",
+          "label": "Tile 7 Title",
+          "value": "Integrations"
+        },
+        {
+          "identifier": "tile_7_description",
+          "type": "text",
+          "description": "Description for the seventh tile",
+          "label": "Tile 7 Description",
+          "value": "Learn about common Anchore Enterprise integrations"
+        },
+        {
+          "identifier": "tile_7_url",
+          "type": "text",
+          "description": "URL for the seventh tile",
+          "label": "Tile 7 URL",
+          "value": "https://docs.anchore.com/current/docs/integration/"
+        },
+        {
+          "identifier": "tile_8",
+          "type": "file",
+          "description": "Icon for the eighth tile",
+          "label": "Tile 8"
+        },
+        {
+          "identifier": "tile_8_title",
+          "type": "text",
+          "description": "Title for the eighth tile",
+          "label": "Tile 8 Title",
+          "value": ""
+        },
+        {
+          "identifier": "tile_8_description",
+          "type": "text",
+          "description": "Description for the eighth tile",
+          "label": "Tile 8 Description",
+          "value": "Description for the eighth tile"
+        },
+        {
+          "identifier": "tile_8_url",
+          "type": "text",
+          "description": "URL for the eighth tile",
+          "label": "Tile 8 URL",
+          "value": "https://www.zendesk.com"
+        },
+        {
+          "identifier": "tile_9",
+          "type": "file",
+          "description": "Icon for the ninth tile",
+          "label": "Tile 9"
+        },
+        {
+          "identifier": "tile_9_title",
+          "type": "text",
+          "description": "Title for the ninth tile",
+          "label": "Tile 9 Title",
+          "value": ""
+        },
+        {
+          "identifier": "tile_9_description",
+          "type": "text",
+          "description": "Description for the ninth tile",
+          "label": "Tile 9 Description",
+          "value": "Description for the ninth tile"
+        },
+        {
+          "identifier": "tile_9_url",
+          "type": "text",
+          "description": "URL for the ninth tile",
+          "label": "Tile 9 URL",
+          "value": "https://www.zendesk.com"
+        },
+        {
+          "identifier": "tile_10",
+          "type": "file",
+          "description": "Icon for the tenth tile",
+          "label": "Tile 10"
+        },
+        {
+          "identifier": "tile_10_title",
+          "type": "text",
+          "description": "Title for the tenth tile",
+          "label": "Tile 10 Title",
+          "value": ""
+        },
+        {
+          "identifier": "tile_10_description",
+          "type": "text",
+          "description": "Description for the tenth tile",
+          "label": "Tile 10 Description",
+          "value": "Description for the tenth tile"
+        },
+        {
+          "identifier": "tile_10_url",
+          "type": "text",
+          "description": "URL for the tenth tile",
+          "label": "Tile 10 URL",
+          "value": "https://www.zendesk.com"
+        },
+        {
+          "identifier": "tile_11",
+          "type": "file",
+          "description": "Icon for the eleventh tile",
+          "label": "Tile 11"
+        },
+        {
+          "identifier": "tile_11_title",
+          "type": "text",
+          "description": "Title for the eleventh tile",
+          "label": "Tile 11 Title",
+          "value": ""
+        },
+        {
+          "identifier": "tile_11_description",
+          "type": "text",
+          "description": "Description for the eleventh tile",
+          "label": "Tile 11 Description",
+          "value": "Description for the eleventh tile"
+        },
+        {
+          "identifier": "tile_11_url",
+          "type": "text",
+          "description": "URL for the eleventh tile",
+          "label": "Tile 11 URL",
+          "value": "https://www.zendesk.com"
+        },
+        {
+          "identifier": "tile_12",
+          "type": "file",
+          "description": "Icon for the twelfth tile",
+          "label": "Tile 12"
+        },
+        {
+          "identifier": "tile_12_title",
+          "type": "text",
+          "description": "Title for the twelfth tile",
+          "label": "Tile 12 Title",
+          "value": ""
+        },
+        {
+          "identifier": "tile_12_description",
+          "type": "text",
+          "description": "Description for the twelfth tile",
+          "label": "Tile 12 Description",
+          "value": "Description for the twelfth tile"
+        },
+        {
+          "identifier": "tile_12_url",
+          "type": "text",
+          "description": "URL for the twelfth tile",
+          "label": "Tile 12 URL",
+          "value": "https://www.zendesk.com"
+        }
+      ]
+    },
+    {
+      "label": "Category Cards",
+      "variables": [
+        {
+          "identifier": "category_card_icon_1",
+          "type": "file",
+          "description": "Icon for the first category card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "category_card_1_name",
+          "type": "text",
+          "description": "Name for category 1",
+          "label": "Category one name",
+          "value": "Category  One"
+        },
+        {
+          "identifier": "category_card_icon_2",
+          "type": "file",
+          "description": "Icon for the second category card",
+          "label": "Card_Icon_2"
+        },
+        {
+          "identifier": "category_card_2_name",
+          "type": "text",
+          "description": "Name for category 2",
+          "label": "Category two name",
+          "value": "622GW"
+        },
+        {
+          "identifier": "category_card_icon_3",
+          "type": "file",
+          "description": "Icon for the third category card",
+          "label": "Card_Icon_3"
+        },
+        {
+          "identifier": "category_card_3_name",
+          "type": "text",
+          "description": "Name for category 3",
+          "label": "Category three name",
+          "value": "522GW"
+        },
+        {
+          "identifier": "category_card_icon_4",
+          "type": "file",
+          "description": "Icon for the fourth category card",
+          "label": "Card_Icon_4"
+        },
+        {
+          "identifier": "category_card_4_name",
+          "type": "text",
+          "description": "Name for category 4",
+          "label": "Category four name",
+          "value": "422GW"
+        },
+        {
+          "identifier": "category_card_icon_5",
+          "type": "file",
+          "description": "Icon for the fifth category card",
+          "label": "Card_Icon_5"
+        },
+        {
+          "identifier": "category_card_5_name",
+          "type": "text",
+          "description": "Name for category 5",
+          "label": "Category five name",
+          "value": "380GWX"
+        },
+        {
+          "identifier": "category_card_icon_6",
+          "type": "file",
+          "description": "Icon for the sixth category card",
+          "label": "Card_Icon_6"
+        },
+        {
+          "identifier": "category_card_6_name",
+          "type": "text",
+          "description": "Name for category 6",
+          "label": "Category sixth name",
+          "value": "380GW"
+        },
+        {
+          "identifier": "category_card_icon_7",
+          "type": "file",
+          "description": "Icon for the seveth category card",
+          "label": "Card_Icon_7"
+        },
+        {
+          "identifier": "category_card_7_name",
+          "type": "text",
+          "description": "Name for category 7",
+          "label": "Category seveth name",
+          "value": "322GW"
+        },
+        {
+          "identifier": "category_card_icon_8",
+          "type": "file",
+          "description": "Icon for the eighth category card",
+          "label": "Card_Icon_8"
+        },
+        {
+          "identifier": "category_card_8_name",
+          "type": "text",
+          "description": "Name for category 8",
+          "label": "Category eighth name",
+          "value": "320XR"
+        },
+        {
+          "identifier": "category_card_icon_9",
+          "type": "file",
+          "description": "Icon for the nine category card",
+          "label": "Card_Icon_9"
+        },
+        {
+          "identifier": "category_card_9_name",
+          "type": "text",
+          "description": "Name for category 9",
+          "label": "Category nine name",
+          "value": "300W"
+        },
+        {
+          "identifier": "category_card_icon_10",
+          "type": "file",
+          "description": "Icon for the ten category card",
+          "label": "Card_Icon_10"
+        },
+        {
+          "identifier": "category_card_10_name",
+          "type": "text",
+          "description": "Name for category 10",
+          "label": "Category ten name",
+          "value": "222G"
+        },
+        {
+          "identifier": "category_card_icon_11",
+          "type": "file",
+          "description": "Icon for the 11 category card",
+          "label": "Card_Icon_11"
+        },
+        {
+          "identifier": "category_card_11_name",
+          "type": "text",
+          "description": "Name for category 11",
+          "label": "Category 11 name",
+          "value": "222X"
+        },
+        {
+          "identifier": "category_card_icon_12",
+          "type": "file",
+          "description": "Icon for the 12 category card",
+          "label": "Card_Icon_12"
+        },
+        {
+          "identifier": "category_card_12_name",
+          "type": "text",
+          "description": "Name for category 12",
+          "label": "Category 12 name",
+          "value": "222XR"
+        },
+        {
+          "identifier": "popular_articles_text",
+          "type": "text",
+          "description": "Text for the popular articles section on the homepage",
+          "label": "Popular Articles Text",
+          "value": "Featured articles"
+        },
+        {
+          "identifier": "article_page_title",
+          "type": "text",
+          "description": "Title for the article page",
+          "label": "Article Page Title",
+          "value": "Article page"
+        },
+        {
+          "identifier": "article_page_description",
+          "type": "text",
+          "description": "Description for the article page",
+          "label": "Article Page Description",
+          "value": "Article page"
+        },
+        {
+          "identifier": "disable_defaults",
+          "type": "checkbox",
+          "description": "Option to disable defaults",
+          "label": "Disable Defaults",
+          "value": false
+        },
+        {
+          "identifier": "new_request_title",
+          "type": "text",
+          "description": "Title for the new request page",
+          "label": "New Request Title",
+          "value": "Submit a request"
+        },
+        {
+          "identifier": "new_request_description",
+          "type": "text",
+          "description": "Description for the new request page",
+          "label": "New Request Description",
+          "value": ""
+        },
+        {
+          "identifier": "article_vote_icon",
+          "type": "file",
+          "description": "Icon for article voting",
+          "label": "Article_Vote_Icon"
+        },
+        {
+          "identifier": "popular_articles_icon",
+          "type": "file",
+          "description": "Icon for popular articles",
+          "label": "popular_articles_icon"
+        }
+      ]
+    },
+    {
+      "label": "Anchore - Section",
+      "variables": [
+        {
+          "identifier": "section_card_icon_1",
+          "type": "file",
+          "description": "Icon for the first section card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_1_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_2",
+          "type": "file",
+          "description": "Icon for the second section card",
+          "label": "Card_Icon_2"
+        },
+        {
+          "identifier": "section_card_icon_2_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_3",
+          "type": "file",
+          "description": "Icon for the third section card",
+          "label": "Card_Icon_3"
+        },
+        {
+          "identifier": "section_card_icon_3_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_4",
+          "type": "file",
+          "description": "Icon for the forth section card",
+          "label": "Card_Icon_4"
+        },
+        {
+          "identifier": "section_card_icon_4_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_5",
+          "type": "file",
+          "description": "Icon for the fifth section card",
+          "label": "Card_Icon_5"
+        },
+        {
+          "identifier": "section_card_icon_5_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        },
+        {
+          "identifier": "section_card_icon_6",
+          "type": "file",
+          "description": "Icon for the sixth section card",
+          "label": "Card_Icon_6"
+        },
+        {
+          "identifier": "section_card_icon_6_active",
+          "type": "file",
+          "description": "Icon for the active card",
+          "label": "Card_Icon_1"
+        }
+      ]
+    },
     {
       "label": "Main colors",
       "variables": [
