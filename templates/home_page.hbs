@@ -86,10 +86,11 @@
     </section>
     {{/if}}
 
-    <section class="section home-section activity">
+<section class="section home-section activity">
   {{#if settings.show_recent_activity}}
+    <h2>{{t 'recent_activity'}}</h2>
     <div class="accordion">
-      {{#each recent_activities}}
+      {{#each recent_activity}}
         <div class="accordion-item">
           <div class="accordion-header">
             <h3>{{title}}</h3>
