@@ -1312,7 +1312,7 @@ input[type="submit"][disabled] {
 .footer img {
   display: block;
   margin: $footer_img_pos;
-  width: #{$footer_img_size}px;
+  width: 4rem;
   height: 4rem;
   max-width: 100%;
 }
