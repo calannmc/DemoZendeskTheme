@@ -1,16 +1,161 @@
 <div class="footer">
   {{#if settings.footer}}
-  <div class="custom-footer">
-    <div class="container">
-      <img src="{{settings.footer_img}}" />
+<footer class="bg-gray-900" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-12 lg:px-8">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <img class="h-14 mx-auto" src="{{settings.logo}}" alt="{{help_center.name}}">
+      <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            {{#if settings.footer_column_1}}
+              <h3 class="text-base text-center md:text-left font-semibold leading-6 text-white">{{settings.footer_column_1}}</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                {{#if settings.footer_link_1_name}}
+                <li class="text-center md:text-left">
+                  <a href="{{settings.footer_1_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_1_name}}</a>
+                </li>
+            {{/if}}
+            {{#if settings.footer_link_2_name}}
+            <li class="text-center md:text-left">
+              <a href="{{settings.footer_2_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_2_name}}</a>
+            </li>{{/if}}
+            {{#if settings.footer_link_3_name}}
+            <li class="text-center md:text-left">
+              <a href="{{settings.footer_3_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_3_name}}</a>
+            </li>{{/if}}
+            {{#if settings.footer_link_4_name}}
+            <li class="text-center md:text-left">
+              <a href="{{settings.footer_4_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_4_name}}</a>
+            </li>{{/if}}
+            {{#if settings.footer_link_5_name}}
+            <li class="text-center md:text-left">
+              <a href="{{settings.footer_5_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_5_name}}</a>
+            </li>{{/if}}
+            {{#if settings.footer_link_6_name}}
+            <li class="text-center md:text-left">
+              <a href="{{settings.footer_6_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_6_name}}</a>
+            </li>{{/if}}
+            {{#if settings.footer_link_7_name}}
+            <li class="text-center md:text-left">
+              <a href="{{settings.footer_7_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_7_name}}</a>
+            </li>{{/if}}
+            {{#if settings.footer_link_8_name}}
+            <li class="text-center md:text-left">
+              <a href="{{settings.footer_8_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_8_name}}</a>
+            </li>{{/if}}
+            {{#if settings.footer_link_9_name}}
+            <li class="text-center md:text-left">
+              <a href="{{settings.footer_9_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_9_name}}</a>
+            </li>{{/if}}
+            {{/if}}
+            </ul>
+          </div>
+          {{#if settings.footer_column_2}}
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-base text-center md:text-left font-semibold leading-6 text-white">{{settings.footer_column_2}}</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              {{#if settings.footer_link_10_name}}
+              <li class="text-center md:text-left">
+                <a href="{{settings.footer_10_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_10_name}}</a>
+              </li> {{/if}}
+              {{#if settings.footer_link_11_name}}
+              <li class="text-center md:text-left">
+                <a href="{{settings.footer_11_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_11_name}}</a>
+              </li>{{/if}}
+              {{#if settings.footer_link_12_name}}
+              <li class="text-center md:text-left">
+                <a href="{{settings.footer_12_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_12_name}}</a>
+              </li> {{/if}}
+              {{#if settings.footer_link_13_name}}
+              <li class="text-center md:text-left">
+                <a href="{{settings.footer_13_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_13_name}}</a>
+              </li>{{/if}}
+              {{#if settings.footer_link_14_name}}
+              <li class="text-center md:text-left">
+                <a href="{{settings.footer_14_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_14_name}}</a>
+              </li>{{/if}}
+              {{/if}}
+            </ul>
+          </div>
+        </div>
+        {{#if settings.footer_column_3}}
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-base text-center md:text-left font-semibold leading-6 text-white">{{settings.footer_column_3}}</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li class="text-center md:text-left">
+                {{#if settings.footer_link_15_name}}
+                <a href="{{settings.footer_15_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_15_name}}</a>
+              </li> {{/if}}
+              {{#if settings.footer_link_16_name}}
+              <li class="text-center md:text-left">
+                <a href="{{settings.footer_16_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_16_name}}</a>
+              </li> {{/if}}
+              {{#if settings.footer_link_17_name}}
+              <li class="text-center md:text-left">
+                <a href="{{settings.footer_17_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_17_name}}</a>
+              </li> {{/if}}
+              {{#if settings.footer_link_18_name}}
+              <li class="text-center md:text-left">
+                <a href="{{settings.footer_18_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_18_name}}</a>
+              </li> {{/if}}
+            </ul>
+          </div>
+          {{/if}}
+          {{#if alternative_locales}}
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm text-center font-semibold leading-6 text-white">Loren Ipsum</h3>
+              <div class="relative">
+                <select onchange="window.location.href=this.value" class="mt-4 block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="language-selector">
+                  <option>{{current_locale.name}}</option>
+                  {{#each alternative_locales}}
+                    <option value="{{url}}">{{name}}</option>
+                  {{/each}}
+                </select>
+                <script>
+                  document.getElementById('language-selector').addEventListener('change', function() {
+                    window.location.href = this.value;
+                  });
+                </script>
+              </div>
+          {{/if}}
+        </div>
+
+
+      </div>
+    </div>
+                     <!-- Footer bottom section for legal and social -->
+              <div class="flex justify-between items-center border-t border-gray-700 pt-4 mt-2">
+                <!-- Legal Wrapper on the left -->
+                <div class="legal-wrapper text-gray-300">
+                  <span class="text-sm">&copy; Anchore 2021 - 2024. All Rights Reserved.</span>
+                  <a href="https://anchore.com/legal/" class="text-sm hover:text-white underline underline-offset-2">Legal</a>
+                </div>
+                <!-- Social Icons on the right -->
+                <div class="social-icons">
+                  <a href="https://github.com/anchore/" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://twitter.com/anchore" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                  <a href="https://linkedin.com/company/anchore" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UC3HczVqyiAqz1aNxBIMS3pQ" target="_blank" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://anchore.com/feed/" target="_blank" class="text-gray-300 hover:text-white">
+                    RSS
+                  </a>
+                </div>
+              </div>
+            </div>
+
+      </div>
     </div>
   </div>
-  {{/if}}
-</div>
-{{#if settings.additional_footer}}
-<div class="additional-footer">
-  <div class="container">
-    <img src="{{settings.additional_footer_img}}" />
   </div>
-</div>
+</footer>
 {{/if}}
