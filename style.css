@@ -23,7 +23,51 @@ main {
   flex: 1;
 }
 
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.accordion-header h3 {
+  margin: 0;
+}
+
+.accordion-toggle {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+.accordion-item.active .accordion-toggle i {
+  transform: rotate(180deg);
+}
 
 .hero {
   display:none;
