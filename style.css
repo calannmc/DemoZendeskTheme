@@ -68,7 +68,6 @@ main {
 .accordion-item.active .accordion-toggle i {
   transform: rotate(180deg);
 }
-
 .hero {
   display:none;
   background-image: none;
