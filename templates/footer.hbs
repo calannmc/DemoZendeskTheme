@@ -1,34 +1,41 @@
 <style>
-  .footer {
-    margin-top: 60px;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23000b76' fill-opacity='1' d='M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  animation: move-wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-
-@keyframes move-wave {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1000px);
-  }
-}
 .footer {
-  margin-top: 60px;
-  height: 320px; /* Adjust based on your SVG's height and your needs */
-  background-image: url("...");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background: rgb(57, 27, 112);
+  transform: scale(1, 1);
+}
+
+.footer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  right: -25%;
+  top: 20px;
+}
+
+.footer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(57, 27, 112);
+  left: -25%;
+  top: -240px;
+  clip-path: ellipse(100% 15% at -15% 100%);
 }
 </style>
 <div class="footer">
   {{#if settings.footer}}
-<footer class="wave" aria-labelledby="footer-heading">
+<footer class="footer" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 py-16 sm:py-12 lg:px-8">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
