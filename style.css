@@ -1584,6 +1584,7 @@ input[type="submit"][disabled] {
 .blocks-item:focus::before,
 .blocks-item:active::before {
   opacity: 1;
+  border-radius: 50px;
 }
 
 .blocks-item:hover *,
@@ -1591,6 +1592,7 @@ input[type="submit"][disabled] {
 .blocks-item:active * {
   color: $blocks_txt_color_hover;
   text-decoration: none;
+  border-radius: 50px;
 }
 
 .blocks-item-internal {
