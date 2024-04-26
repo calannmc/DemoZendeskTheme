@@ -86,7 +86,15 @@
     </section>
     {{/if}}
 
-<section class="section home-section activity">
+    <section class="section home-section activity">
+      {{#if settings.show_recent_activity}}
+      {{recent_activity}}
+      {{/if}}
+    </section>
+  </div>
+  </div>
+
+  <section class="section home-section activity">
   {{#if settings.show_recent_activity}}
     <h2>{{t 'recent_activity'}}</h2>
     <div class="accordion">
@@ -108,12 +116,20 @@
   {{/if}}
 </section>
 
-    <section class="section home-section activity">
-      {{#if settings.show_recent_activity}}
-      {{recent_activity}}
-      {{/if}}
-    </section>
-  </div>
-  </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(function(item) {
+      const header = item.querySelector('.accordion-header');
+      const content = item.querySelector('.accordion-content');
+
+      header.addEventListener('click', function() {
+        item.classList.toggle('active');
+        content.style.display = item.classList.contains('active') ? 'block' : 'none';
+      });
+    });
+  });
+</script>
 </main>
 </div>
