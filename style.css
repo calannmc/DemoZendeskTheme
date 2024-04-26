@@ -1624,6 +1624,7 @@ input[type="submit"][disabled] {
 .blocks-item-link:hover,
 .blocks-item-link:active {
   text-decoration: none;
+  border-radius: 50px;
 }
 
 .blocks-item-link:focus {
@@ -1806,9 +1807,10 @@ input[type="submit"][disabled] {
 }
 
 .recent-activity-item {
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
   overflow: auto;
   padding: 20px 0;
+  border-radius: 50px;
 }
 
 .recent-activity-item-parent {
