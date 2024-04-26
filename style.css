@@ -1543,7 +1543,7 @@ input[type="submit"][disabled] {
     $blocks_bg_color_bottom
   );
   transition: all 0.2s;
-  border-radius: 4px;
+  border-radius: 50px;
   z-index: 1;
 }
 
