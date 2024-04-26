@@ -19,8 +19,6 @@ html {
   }
 }
 
-
-
 main {
   flex: 1;
 }
@@ -89,7 +87,7 @@ main {
   top: 50%;
   left: calc(100% + 10px); /* Position to the right of the icon */
   transform: translateY(-50%);
-  background-color: #000b76; /* Blue metallic background color */
+  background-color: #2e4057; /* Blue metallic background color */
   color: #fff;
   padding: 5px 10px;
   border-radius: 4px;
@@ -110,7 +108,7 @@ main {
   transform: translateY(50%);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #000b76transparent transparent; /* Adjusted to match background color */
+  border-color: transparent #2e4057 transparent transparent; /* Adjusted to match background color */
 }
 
 .user-nav a {
@@ -126,7 +124,7 @@ main {
 .user-nav a i {
   font-size: 20px;
   color: #fff;
-  background: linear-gradient(316deg, #000b76, 0%, #2e4057 74%);
+  background: linear-gradient(316deg, #2962ff, 0%, #2e4057 74%);
   border-radius: 50%;
   padding: 10px;
   transition: background-color 0.3s ease-in; /* Added transition */
@@ -152,7 +150,7 @@ main {
   right: calc(100% + 10px); /* Position to the right of the icon */
   transform: translateY(-50%);
   padding: 5px 10px;
-  background-color: #000b76; /* Blue metallic background color */
+  background-color: #2e4057; /* Blue metallic background color */
   color: #fff;
   font-size: 12px;
   white-space: nowrap;
@@ -168,7 +166,7 @@ main {
   transform: translateY(50%);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #000b76 transparent transparent; /* Adjusted to match background color */
+  border-color: transparent #4062bb transparent transparent; /* Adjusted to match background color */
   z-index: 1;
 }
 
@@ -1314,8 +1312,8 @@ input[type="submit"][disabled] {
 .footer img {
   display: block;
   margin: $footer_img_pos;
-  width: 4rem;
-  height: 4rem;
+  width: 4em;
+  height: auto;
   max-width: 100%;
 }
 
