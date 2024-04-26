@@ -47,7 +47,7 @@
           "value": "rgba(255, 255, 255, 1)"
         },
         {
-          "identifier": "Footer_title_color",
+          "identifier": "footer_title_color",
           "type": "color",
           "description": "Title color of your footer",
           "label": "Footer title color",
