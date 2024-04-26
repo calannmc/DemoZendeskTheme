@@ -1,6 +1,35 @@
+<style>.footer {
+  margin-top: 60px;
+  position: relative;
+  background-color: $footer_bg_color; /* Make sure this matches your design */
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -100px; /* Adjust based on the wave height */
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: repeat-x;
+  background-size: 1000px 100px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='100px' fill='none' viewBox='0 0 1000 100px'><path fill='$footer_bg_color' d='M0 30 Q 250 90 500 30 T 1000 30 V 100 H0 Z'></path></svg>");
+  animation: move-wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+@keyframes move-wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+</style>
 <div class="footer">
   {{#if settings.footer}}
-<footer id="wave" aria-labelledby="footer-heading">
+<footer class="wave" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 py-16 sm:py-12 lg:px-8">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -129,24 +158,24 @@
               <div class="flex justify-between items-center border-t border-gray-700 pt-4 mt-2">
                 <!-- Legal Wrapper on the left -->
                 <div class="legal-wrapper text-gray-300">
-                  <span class="text-sm">&copy; Anchore 2021 - 2024. All Rights Reserved.</span>
-                  <a href="https://anchore.com/legal/" class="text-sm hover:text-white underline underline-offset-2">Legal</a>
+                  <span class="text-sm">&copy; Demo Theme 2021 - 2024. All Rights Reserved.</span>
+                  <a href="https://demo.com/legal/" class="text-sm hover:text-white underline underline-offset-2">Legal</a>
                 </div>
                 <!-- Social Icons on the right -->
                 <div class="social-icons">
-                  <a href="https://github.com/anchore/" target="_blank" class="text-gray-300 hover:text-white">
+                  <a href="https://github.com/demo/" target="_blank" class="text-gray-300 hover:text-white">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="https://twitter.com/anchore" target="_blank" class="text-gray-300 hover:text-white">
+                  <a href="https://twitter.com/demo" target="_blank" class="text-gray-300 hover:text-white">
                     <i class="fab fa-x-twitter"></i>
                   </a>
-                  <a href="https://linkedin.com/company/anchore" target="_blank" class="text-gray-300 hover:text-white">
+                  <a href="https://linkedin.com/company/demo" target="_blank" class="text-gray-300 hover:text-white">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                   <a href="https://www.youtube.com/channel/UC3HczVqyiAqz1aNxBIMS3pQ" target="_blank" class="text-gray-300 hover:text-white">
                     <i class="fab fa-youtube"></i>
                   </a>
-                  <a href="https://anchore.com/feed/" target="_blank" class="text-gray-300 hover:text-white">
+                  <a href="https://demo.com/feed/" target="_blank" class="text-gray-300 hover:text-white">
                     RSS
                   </a>
                 </div>
