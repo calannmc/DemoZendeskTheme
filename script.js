@@ -1,11 +1,29 @@
-/*!
- * Help Center Demo Builder
- *
- * Developed by Marcelo De Bortoli (EMEA Solution Developer)
- * This theme was developed based on the Zendesk Copenhagen theme
- *
- * Theme developed for demo purposes only. Do not share it externally.
- */
+//social icons
+
+  
+function updateIcon(containerSelector, faClass) {
+  const iconEl = document.querySelector(containerSelector);
+  if (iconEl) {
+    // Clears any existing content within the container
+    iconEl.innerHTML = '';
+
+    // Creates a new <i> element for the Font Awesome icon
+    const faIcon = document.createElement('i');
+    faIcon.className = 'fab ' + faClass;
+
+    // Appends the new Font Awesome icon to the container
+    iconEl.appendChild(faIcon);
+    console.log(`Updated ${containerSelector} with ${faClass}`);
+  } else {
+    console.error(`No element found with the selector ${containerSelector}`);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  updateIcon('.share-facebook', 'fa-facebook');
+  updateIcon('.share-twitter', 'fa-x-twitter');
+  updateIcon('.share-linkedin', 'fa-linkedin');
+});
 document.addEventListener('DOMContentLoaded', function() {
   const accordionItems = document.querySelectorAll('.accordion-item');
 

@@ -1118,7 +1118,9 @@ input[type="submit"][disabled] {
   background-color: transparent;
   color: $header_font_color;
 }
-
+.footer-logo{
+  max-height: 3rem;
+}
 .skip-navigation {
   align-items: center;
   background-color: black;
