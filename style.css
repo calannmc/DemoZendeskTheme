@@ -1118,10 +1118,7 @@ input[type="submit"][disabled] {
   background-color: transparent;
   color: $header_font_color;
 }
-.footer-logo{
-  max-height: 3rem;
-  max-width:3rem;
-}
+
 .skip-navigation {
   align-items: center;
   background-color: black;
@@ -1316,7 +1313,7 @@ input[type="submit"][disabled] {
   display: block;
   margin: $footer_img_pos;
   width: #{$footer_img_size}px;
-  height: auto;
+  height: 4rem;
   max-width: 100%;
 }
 
