@@ -1301,6 +1301,10 @@ input[type="submit"][disabled] {
   margin-top: 60px;
   
 }
+.footer a:hover{
+  color: #fff;
+
+}
 
 .custom-footer {
   background-color: $footer_bg_color;
