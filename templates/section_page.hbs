@@ -1,8 +1,5 @@
-<div class="container-divider"></div>
-<div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-      <div class="search">
+
+<div class="search">
     <h2 class="visibility-hidden">{{ t 'search' }}</h2>
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
       class="search-icon" aria-hidden="true">
@@ -11,6 +8,10 @@
     </svg>
     {{search submit=false instant=settings.instant_search class='search search-full'}}
   </div>
+<div class="container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+      
     </div>
   </nav>
 
