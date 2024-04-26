@@ -2,7 +2,7 @@
   "name": "DemoZendeskTheme",
   "author": "Carole McNally",
 
-  "version": "3.8.0",
+  "version": "3.8.1",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -981,8 +981,9 @@
         }
       ]
     },
+
     {
-      "label": "Footer",
+      "label": "Demo - Footer",
       "variables": [
         {
           "identifier": "footer",
@@ -991,154 +992,6 @@
           "label": "Custom footer",
           "value": true
         },
-        {
-          "identifier": "footer_bg_color",
-          "type": "color",
-          "description": "Background color of the custom footer",
-          "label": "Footer bg color",
-          "value": "rgba(235, 235, 235, 1)"
-        },
-        {
-          "identifier": "footer_border_pos",
-          "type": "list",
-          "description": "Border position of the custom footer",
-          "label": "Footer border position",
-          "value": "1px 0",
-          "options": [
-            {
-              "label": "None",
-              "value": "0"
-            },
-            {
-              "label": "Top",
-              "value": "1px 0 0 0"
-            },
-            {
-              "label": "Bottom",
-              "value": "0 0 1px 0"
-            },
-            {
-              "label": "Both",
-              "value": "1px 0"
-            }
-          ]
-        },
-        {
-          "identifier": "footer_border_color",
-          "type": "color",
-          "description": "Border color of the custom footer",
-          "label": "Footer border color",
-          "value": "rgba(219, 219, 219, 1)"
-        },
-        {
-          "identifier": "footer_img",
-          "type": "file",
-          "description": "Image of the custom footer",
-          "label": "Footer image"
-        },
-        {
-          "identifier": "footer_img_size",
-          "type": "range",
-          "description": "Size of the custom footer image",
-          "label": "Footer image size",
-          "value": 865,
-          "min": 1,
-          "max": 1160
-        },
-        {
-          "identifier": "footer_img_pos",
-          "type": "list",
-          "description": "Position of the custom footer image",
-          "label": "Footer image position",
-          "value": "0 auto",
-          "options": [
-            {
-              "label": "Left",
-              "value": "0 auto 0 0"
-            },
-            {
-              "label": "Center",
-              "value": "0 auto"
-            },
-            {
-              "label": "Right",
-              "value": "0 0 0 auto"
-            }
-          ]
-        },
-        {
-          "identifier": "footer_padding",
-          "type": "range",
-          "description": "Padding size of the custom footer",
-          "label": "Footer padding",
-          "value": 30,
-          "min": 0,
-          "max": 100
-        },
-        {
-          "identifier": "additional_footer",
-          "type": "checkbox",
-          "description": "Enable additional custom footer",
-          "label": "Additional footer",
-          "value": true
-        },
-        {
-          "identifier": "additional_footer_bg_color",
-          "type": "color",
-          "description": "Background color of the additional footer",
-          "label": "Additional footer bg color",
-          "value": "rgba(247, 247, 247, 1)"
-        },
-        {
-          "identifier": "additional_footer_img",
-          "type": "file",
-          "description": "Image of the additional footer",
-          "label": "Additional footer image"
-        },
-        {
-          "identifier": "additional_footer_img_size",
-          "type": "range",
-          "description": "Size of the additional footer image",
-          "label": "Additional footer image size",
-          "value": 1160,
-          "min": 1,
-          "max": 1160
-        },
-        {
-          "identifier": "additional_footer_img_pos",
-          "type": "list",
-          "description": "Position of the additional footer image",
-          "label": "Additional footer image position",
-          "value": "0 auto",
-          "options": [
-            {
-              "label": "Left",
-              "value": "0 auto 0 0"
-            },
-            {
-              "label": "Center",
-              "value": "0 auto"
-            },
-            {
-              "label": "Right",
-              "value": "0 0 0 auto"
-            }
-          ]
-        },
-        {
-          "identifier": "additional_footer_padding",
-          "type": "range",
-          "description": "Padding size of the additional footer",
-          "label": "Additional footer padding",
-          "value": 50,
-          "min": 0,
-          "max": 100
-        }
-      ]
-    },
-    {
-      "label": "Demo - Footer",
-      "variables": [
         {
           "identifier": "footer_column_1",
           "type": "text",
