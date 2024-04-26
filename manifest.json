@@ -2,7 +2,7 @@
   "name": "DemoZendeskTheme",
   "author": "Carole McNally",
 
-  "version": "3.8.4",
+  "version": "3.8.5",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -988,8 +988,8 @@
         {
           "identifier": "footer",
           "type": "checkbox",
-          "description": "Enable custom footer",
-          "label": "Custom footer",
+          "description": "Enable footer",
+          "label": "Footer",
           "value": true
         },
         {
