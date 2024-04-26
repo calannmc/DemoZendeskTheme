@@ -1339,6 +1339,7 @@ input[type="submit"][disabled] {
   padding-right: 20px;
   -webkit-appearance: none;
   width: 100%;
+  margin-bottom:20px;
 }
 
 [dir="rtl"] .search input[type="search"] {
@@ -1542,6 +1543,7 @@ input[type="submit"][disabled] {
     $blocks_bg_color_bottom
   );
   transition: all 0.2s;
+  border-radius: 4px;
   z-index: 1;
 }
 
@@ -1656,9 +1658,7 @@ input[type="submit"][disabled] {
   background-position: center center;
   background-repeat: no-repeat;
 }
-.knowledgebase{
-  margin-top:20px;
-}
+
 .knowledge-base ..blocks-item:nth-child(10n + 1) .blocks-item-link:before {
   background-image: url("$blocks_icon_1");
 }
