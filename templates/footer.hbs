@@ -1,38 +1,4 @@
-<style>
-.footer {
-  display: block;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  background: rgb(57, 27, 112);
-  transform: scale(1, 1);
-}
 
-.footer:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  width: 100%;
-  height: 300px;
-  background-color: white;
-  right: -25%;
-  top: 20px;
-}
-
-.footer:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  width: 100%;
-  height: 300px;
-  background-color: rgb(57, 27, 112);
-  left: -25%;
-  top: -240px;
-  clip-path: ellipse(100% 15% at -15% 100%);
-}
-</style>
 <div class="footer">
   {{#if settings.footer}}
 <footer class="footer" aria-labelledby="footer-heading">
@@ -67,7 +33,15 @@
             <li class="text-center md:text-left">
               <a href="{{settings.footer_5_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_5_name}}</a>
             </li>{{/if}}
-            {{#if settings.footer_link_6_name}}
+            
+            {{/if}}
+            </ul>
+          </div>
+          {{#if settings.footer_column_2}}
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-base text-center md:text-left font-semibold leading-6 text-white">{{settings.footer_column_2}}</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              {{#if settings.footer_link_6_name}}
             <li class="text-center md:text-left">
               <a href="{{settings.footer_6_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_6_name}}</a>
             </li>{{/if}}
@@ -83,18 +57,22 @@
             <li class="text-center md:text-left">
               <a href="{{settings.footer_9_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_9_name}}</a>
             </li>{{/if}}
-            {{/if}}
-            </ul>
-          </div>
-          {{#if settings.footer_column_2}}
-          <div class="mt-10 md:mt-0">
-            <h3 class="text-base text-center md:text-left font-semibold leading-6 text-white">{{settings.footer_column_2}}</h3>
-            <ul role="list" class="mt-6 space-y-4">
               {{#if settings.footer_link_10_name}}
               <li class="text-center md:text-left">
                 <a href="{{settings.footer_10_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_10_name}}</a>
               </li> {{/if}}
-              {{#if settings.footer_link_11_name}}
+              
+              {{/if}}
+            </ul>
+          </div>
+        </div>
+        {{#if settings.footer_column_3}}
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-base text-center md:text-left font-semibold leading-6 text-white">{{settings.footer_column_3}}</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li class="text-center md:text-left">
+                {{#if settings.footer_link_11_name}}
               <li class="text-center md:text-left">
                 <a href="{{settings.footer_11_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_11_name}}</a>
               </li>{{/if}}
@@ -110,14 +88,14 @@
               <li class="text-center md:text-left">
                 <a href="{{settings.footer_14_url}}" class="text-sm leading-6 text-gray-300 hover:text-white">{{settings.footer_link_14_name}}</a>
               </li>{{/if}}
-              {{/if}}
+                
             </ul>
           </div>
-        </div>
-        {{#if settings.footer_column_3}}
+          {{/if}}
+             {{#if settings.footer_column_4}}
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-base text-center md:text-left font-semibold leading-6 text-white">{{settings.footer_column_3}}</h3>
+            <h3 class="text-base text-center md:text-left font-semibold leading-6 text-white">{{settings.footer_column_4}}</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li class="text-center md:text-left">
                 {{#if settings.footer_link_15_name}}

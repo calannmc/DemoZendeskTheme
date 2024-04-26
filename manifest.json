@@ -2,7 +2,7 @@
   "name": "DemoZendeskTheme",
   "author": "Carole McNally",
 
-  "version": "3.8.3",
+  "version": "3.8.4",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -1070,6 +1070,13 @@
           "value": "https://Demo.com/partners/"
         },
         {
+          "identifier": "footer_column_2",
+          "type": "text",
+          "description": "Title for footer column two",
+          "label": "Footer Column 2",
+          "value": "Learn"
+        },
+        {
           "identifier": "footer_link_6_name",
           "type": "text",
           "description": "Name for footer link 6",
@@ -1125,13 +1132,7 @@
           "label": "Footer 9 URL",
           "value": ""
         },
-        {
-          "identifier": "footer_column_2",
-          "type": "text",
-          "description": "Title for footer column two",
-          "label": "Footer Column 2",
-          "value": "Learn"
-        },
+
         {
           "identifier": "footer_link_10_name",
           "type": "text",
@@ -1145,6 +1146,13 @@
           "description": "URL for footer 10",
           "label": "Footer 10 URL",
           "value": "https://Demo.com/compliance/"
+        },
+        {
+          "identifier": "footer_column_3",
+          "type": "text",
+          "description": "Title for footer column three",
+          "label": "Footer Column 3",
+          "value": "Learn"
         },
         {
           "identifier": "footer_link_11_name",
@@ -1202,13 +1210,7 @@
           "label": "Footer 14 URL",
           "value": ""
         },
-        {
-          "identifier": "footer_column_3",
-          "type": "text",
-          "description": "Title for footer column three",
-          "label": "Footer Column 3",
-          "value": "Company"
-        },
+
         {
           "identifier": "footer_link_15_name",
           "type": "text",
@@ -1222,6 +1224,13 @@
           "description": "URL for footer 15",
           "label": "Footer 15 URL",
           "value": "https://Demo.com/about-us/"
+        },
+        {
+          "identifier": "footer_column_4",
+          "type": "text",
+          "description": "Title for footer column four",
+          "label": "Footer Column 4",
+          "value": "Company"
         },
         {
           "identifier": "footer_link_16_name",
