@@ -54,6 +54,13 @@
           "value": "rgba(255, 255, 255, 1)"
         },
         {
+          "identifier": "footer_hover_color",
+          "type": "color",
+          "description": "Hover color of your footer",
+          "label": "Footer hover color",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
           "identifier": "footer_link_color",
           "type": "color",
           "description": "Link color of your footer",
