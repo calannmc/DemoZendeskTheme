@@ -66,7 +66,48 @@
       {{/if}}
 
       {{pagination}}
+<dl class="mt-5 md:mt-10 space-y-6 divide-y divide-gray-900/10">
+      {{#each section.articles}}
+      <div class="pt-6">
+        <dt>
+          <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="article-{{id}}" aria-expanded="false">
+            <span class="text-base font-semibold leading-7">{{title}}</span>
+            <span class="ml-6 flex h-7 items-center">
+              <svg class="{{#if @first}}hidden{{/if}} h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+              </svg>
+              <svg class="{{#unless @first}}hidden{{/unless}} h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+              </svg>
+            </span>
+          </button>
+        </dt>
+        <dd class="mt-2 pr-12 {{#unless @first}}hidden{{/unless}}" id="article-{{id}}">
+          <p class="text-base leading-7 text-gray-600">{{excerpt body}}</p>
+          <a href="{{url}}" class="block my-4 underline">View article here</a>
+        </dd>
+      </div>
+      {{/each}}
+    </dl>
+  </div>
+</div>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('button[aria-controls]').forEach(button => {
+    button.addEventListener('click', () => {
+      const articleId = button.getAttribute('aria-controls');
+      const content = document.getElementById(articleId);
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      
+      button.setAttribute('aria-expanded', !isExpanded);
+      content.classList.toggle('hidden');
+      
+      button.querySelectorAll('svg').forEach(icon => icon.classList.toggle('hidden'));
+    });
+  });
+});
+</script>
     </section>
   </div>
 </div>
