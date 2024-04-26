@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 document.addEventListener('DOMContentLoaded', function () {
   // Key map
   var ENTER = 13
