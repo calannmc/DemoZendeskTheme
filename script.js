@@ -6,7 +6,18 @@
  *
  * Theme developed for demo purposes only. Do not share it externally.
  */
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionItems = document.querySelectorAll('.accordion-item');
 
+  accordionItems.forEach(function(item) {
+    const header = item.querySelector('.accordion-header');
+    const content = item.querySelector('.accordion-content');
+
+    header.addEventListener('click', function() {
+      item.classList.toggle('active');
+    });
+  });
+});
 document.addEventListener('DOMContentLoaded', function () {
   // Key map
   var ENTER = 13
