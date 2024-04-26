@@ -941,7 +941,7 @@
           "type": "list",
           "description": "Position of the Community hero search bar",
           "label": "Search bar position",
-          "value": "50%",
+          "value": "100%",
           "options": [
             {
               "label": "Top",
