@@ -39,7 +39,7 @@
           "type": "text",
           "description": "Description for the homepage hero banner",
           "label": "Hero Banner Description",
-          "value": "Search for Anchore content in the box below"
+          "value": "Search for Demo content in the box below"
         },
         {
           "identifier": "hero_banner_image",
@@ -59,7 +59,7 @@
           "type": "text",
           "description": "URL for the CTA",
           "label": "CTA1 URL",
-          "value": "https://support.anchore.com/hc/en-us/requests/new"
+          "value": "https://support.Demo.com/hc/en-us/requests/new"
         },
         {
           "identifier": "cta_two_title",
@@ -162,7 +162,7 @@
           "type": "text",
           "description": "news content",
           "label": "news_content",
-          "value": "Anchore Enterprise v5.4.1 is released! "
+          "value": "Demo Enterprise v5.4.1 is released! "
         }
       ]
     },
@@ -180,21 +180,21 @@
           "type": "text",
           "description": "Title for video tile",
           "label": "Video Tile Title",
-          "value": "Anchore Videos"
+          "value": "Demo Videos"
         },
         {
           "identifier": "video_tile_description",
           "type": "text",
           "description": "Description for the video tile",
           "label": "Video Tile Description",
-          "value": "Recordings from prior Anchore webinars on best practice and implementation"
+          "value": "Recordings from prior Demo webinars on best practice and implementation"
         },
         {
           "identifier": "video_tile_url",
           "type": "text",
           "description": "URL for the video tile",
           "label": "Video Tile URL",
-          "value": "https://vimeo.com/anchore"
+          "value": "https://vimeo.com/Demo"
         },
         {
           "identifier": "tile_1",
@@ -214,14 +214,14 @@
           "type": "text",
           "description": "Description for the first tile",
           "label": "Tile 1 Description",
-          "value": "Support lifecycle information for Anchore Enterprise releases. "
+          "value": "Support lifecycle information for Demo Enterprise releases. "
         },
         {
           "identifier": "tile_1_url",
           "type": "text",
           "description": "URL for the first tile",
           "label": "Tile 1 URL",
-          "value": "https://support.anchore.com/hc/en-us/articles/28208861979923-Anchore-Enterprise-Support-Lifecycle"
+          "value": "https://support.Demo.com/hc/en-us/articles/28208861979923-Demo-Enterprise-Support-Lifecycle"
         },
         {
           "identifier": "tile_2",
@@ -241,14 +241,14 @@
           "type": "text",
           "description": "Description for the second tile",
           "label": "Tile 2 Description",
-          "value": "Release Notes containing new features and resolved issues for all Anchore Enterprise versions"
+          "value": "Release Notes containing new features and resolved issues for all Demo Enterprise versions"
         },
         {
           "identifier": "tile_2_url",
           "type": "text",
           "description": "URL for the second tile",
           "label": "Tile 2 URL",
-          "value": "https://docs.anchore.com/current/docs/releasenotes/"
+          "value": "https://docs.Demo.com/current/docs/releasenotes/"
         },
         {
           "identifier": "tile_3",
@@ -268,14 +268,14 @@
           "type": "text",
           "description": "Description for the third tile",
           "label": "Tile 3 Description",
-          "value": "Information regarding your Anchore Enterprise license"
+          "value": "Information regarding your Demo Enterprise license"
         },
         {
           "identifier": "tile_3_url",
           "type": "text",
           "description": "URL for the third tile",
           "label": "Tile 3 URL",
-          "value": "https://support.anchore.com/hc/en-us/categories/27405136587667-Licensing-Billing"
+          "value": "https://support.Demo.com/hc/en-us/categories/27405136587667-Licensing-Billing"
         },
         {
           "identifier": "tile_4",
@@ -295,14 +295,14 @@
           "type": "text",
           "description": "Description for the fourth tile",
           "label": "Tile 4 Description",
-          "value": "Browse the Anchore V2 API"
+          "value": "Browse the Demo V2 API"
         },
         {
           "identifier": "tile_4_url",
           "type": "text",
           "description": "URL for the fourth tile",
           "label": "Tile 4 URL",
-          "value": "https://docs.anchore.com/current/docs/api/v2/reference/"
+          "value": "https://docs.Demo.com/current/docs/api/v2/reference/"
         },
         {
           "identifier": "tile_5",
@@ -315,21 +315,21 @@
           "type": "text",
           "description": "Title for the fifth tile",
           "label": "Tile 5 Title",
-          "value": "Anchore Documentation"
+          "value": "Demo Documentation"
         },
         {
           "identifier": "tile_5_description",
           "type": "text",
           "description": "Description for the fifth tile",
           "label": "Tile 5 Description",
-          "value": "Version specific documentation for Anchore Enterprise releases"
+          "value": "Version specific documentation for Demo Enterprise releases"
         },
         {
           "identifier": "tile_5_url",
           "type": "text",
           "description": "URL for the fifth tile",
           "label": "Tile 5 URL",
-          "value": "https://docs.anchore.com/current/docs/"
+          "value": "https://docs.Demo.com/current/docs/"
         },
         {
           "identifier": "tile_6",
@@ -349,14 +349,14 @@
           "type": "text",
           "description": "Description for the sixth tile",
           "label": "Tile 6 Description",
-          "value": "Validate vulnerability feed health for your Anchore Enterprise deployment"
+          "value": "Validate vulnerability feed health for your Demo Enterprise deployment"
         },
         {
           "identifier": "tile_6_url",
           "type": "text",
           "description": "URL for the sixth tile",
           "label": "Tile 6 URL",
-          "value": "https://docs.anchore.com/current/docs/troubleshooting/#verifying-feeds"
+          "value": "https://docs.Demo.com/current/docs/troubleshooting/#verifying-feeds"
         },
         {
           "identifier": "tile_7",
@@ -376,14 +376,14 @@
           "type": "text",
           "description": "Description for the seventh tile",
           "label": "Tile 7 Description",
-          "value": "Learn about common Anchore Enterprise integrations"
+          "value": "Learn about common Demo Enterprise integrations"
         },
         {
           "identifier": "tile_7_url",
           "type": "text",
           "description": "URL for the seventh tile",
           "label": "Tile 7 URL",
-          "value": "https://docs.anchore.com/current/docs/integration/"
+          "value": "https://docs.Demo.com/current/docs/integration/"
         },
         {
           "identifier": "tile_8",
@@ -738,7 +738,7 @@
       ]
     },
     {
-      "label": "Anchore - Section",
+      "label": "Demo - Section",
       "variables": [
         {
           "identifier": "section_card_icon_1",
@@ -1047,622 +1047,7 @@
         }
       ]
     },
-    {
-      "label": "Alert message",
-      "variables": [
-        {
-          "identifier": "alert",
-          "type": "checkbox",
-          "description": "Enable alert message",
-          "label": "Alert",
-          "value": true
-        },
-        {
-          "identifier": "alert_bg_color",
-          "type": "color",
-          "description": "Background color of the alert message",
-          "label": "Alert background color",
-          "value": "rgba(253, 216, 53, 1)"
-        },
-        {
-          "identifier": "alert_txt_color",
-          "type": "color",
-          "description": "Text color of the alert message",
-          "label": "Alert text color",
-          "value": "rgba(3, 54, 61, 1)"
-        },
-        {
-          "identifier": "alert_txt_message",
-          "type": "text",
-          "description": "Alert text message",
-          "label": "Alert text message",
-          "value": "I am just an alert message. Hello World!"
-        }
-      ]
-    },
-    {
-      "label": "Header",
-      "variables": [
-        {
-          "identifier": "header_bg_color",
-          "type": "color",
-          "description": "Header background color",
-          "label": "Header bg color",
-          "value": "rgba(242, 242, 242, 1)"
-        },
-        {
-          "identifier": "header_height",
-          "type": "range",
-          "description": "Height of the header container",
-          "label": "Header height",
-          "value": 100,
-          "min": 50,
-          "max": 250
-        },
-        {
-          "identifier": "header_border_pos",
-          "type": "list",
-          "description": "Position of the header border",
-          "label": "Header border position",
-          "value": "1px 0 0 0",
-          "options": [
-            {
-              "label": "None",
-              "value": "0"
-            },
-            {
-              "label": "Top",
-              "value": "1px 0 0 0"
-            },
-            {
-              "label": "Bottom",
-              "value": "0 0 1px 0"
-            },
-            {
-              "label": "Both",
-              "value": "1px 0"
-            }
-          ]
-        },
-        {
-          "identifier": "header_border_color",
-          "type": "color",
-          "description": "Color of the header border",
-          "label": "Header border color",
-          "value": "rgba(219, 219, 219, 1)"
-        },
-        {
-          "identifier": "logo_height",
-          "type": "range",
-          "description": "Size of the logo",
-          "label": "Logo size",
-          "value": 65,
-          "min": 25,
-          "max": 150
-        },
-        {
-          "identifier": "header_font_case",
-          "type": "list",
-          "description": "Font case of the header menu",
-          "label": "Header font case",
-          "value": "uppercase",
-          "options": [
-            {
-              "label": "Default",
-              "value": "none"
-            },
-            {
-              "label": "Uppercase",
-              "value": "uppercase"
-            },
-            {
-              "label": "Lowercase",
-              "value": "lowercase"
-            },
-            {
-              "label": "Capitalize",
-              "value": "capitalize"
-            }
-          ]
-        },
-        {
-          "identifier": "header_font_weight",
-          "type": "list",
-          "description": "Font weight of the header menu",
-          "label": "Header font weight",
-          "value": "600",
-          "options": [
-            {
-              "label": "Light",
-              "value": "300"
-            },
-            {
-              "label": "Normal",
-              "value": "normal"
-            },
-            {
-              "label": "Semi Bold",
-              "value": "600"
-            },
-            {
-              "label": "Bold",
-              "value": "900"
-            }
-          ]
-        },
-        {
-          "identifier": "header_font_color",
-          "type": "color",
-          "description": "Font color of the header menu",
-          "label": "Header font color",
-          "value": "rgba(102, 102, 102, 1)"
-        },
-        {
-          "identifier": "additional_header",
-          "type": "checkbox",
-          "description": "Enable additional custom header",
-          "label": "Additional header",
-          "value": true
-        },
-        {
-          "identifier": "additional_header_bg",
-          "type": "color",
-          "description": "Background color of the additional header",
-          "label": "Additional header bg color",
-          "value": "rgba(235, 235, 235, 1)"
-        },
-        {
-          "identifier": "additional_header_pos",
-          "type": "list",
-          "description": "Position of the additional header",
-          "label": "Additional header position",
-          "value": "0",
-          "options": [
-            {
-              "label": "Before main header",
-              "value": "0"
-            },
-            {
-              "label": "After main header",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "identifier": "additional_header_img",
-          "type": "file",
-          "description": "Image of the additional header",
-          "label": "Additional header image"
-        },
-        {
-          "identifier": "additional_header_img_size",
-          "type": "range",
-          "description": "Image size of the additional header",
-          "label": "Additional header image size",
-          "value": 165,
-          "min": 1,
-          "max": 1160
-        },
-        {
-          "identifier": "additional_header_img_pos",
-          "type": "list",
-          "description": "Image position of the additional header",
-          "label": "Additional header image position",
-          "value": "0 0 0 auto",
-          "options": [
-            {
-              "label": "Left",
-              "value": "0 auto 0 0"
-            },
-            {
-              "label": "Center",
-              "value": "0 auto"
-            },
-            {
-              "label": "Right",
-              "value": "0 0 0 auto"
-            }
-          ]
-        },
-        {
-          "identifier": "additional_header_padding",
-          "type": "range",
-          "description": "Padding size of the additional header",
-          "label": "Additional header padding",
-          "value": 10,
-          "min": 0,
-          "max": 50
-        }
-      ]
-    },
-    {
-      "label": "Home page",
-      "variables": [
-        {
-          "identifier": "home_hero_img",
-          "type": "file",
-          "description": "Home hero image",
-          "label": "Home hero image"
-        },
-        {
-          "identifier": "home_hero_height",
-          "type": "range",
-          "description": "Height of the home hero container",
-          "label": "Hero height",
-          "value": 390,
-          "min": 100,
-          "max": 1000
-        },
-        {
-          "identifier": "home_hero_bg_size",
-          "type": "list",
-          "description": "Size of the home hero image",
-          "label": "Hero image size",
-          "value": "cover",
-          "options": [
-            {
-              "label": "Original size",
-              "value": "auto"
-            },
-            {
-              "label": "Cover entire container",
-              "value": "cover"
-            },
-            {
-              "label": "Fully visible",
-              "value": "contain"
-            }
-          ]
-        },
-        {
-          "identifier": "home_hero_bg_pos_h",
-          "type": "list",
-          "description": "Horizontal position of the home hero image",
-          "label": "Hero image horizontal position",
-          "value": "center",
-          "options": [
-            {
-              "label": "Left",
-              "value": "left"
-            },
-            {
-              "label": "Center",
-              "value": "center"
-            },
-            {
-              "label": "Right",
-              "value": "right"
-            }
-          ]
-        },
-        {
-          "identifier": "home_hero_bg_pos_v",
-          "type": "list",
-          "description": "Vertical position of the home hero image",
-          "label": "Hero image vertical position",
-          "value": "center",
-          "options": [
-            {
-              "label": "Top",
-              "value": "top"
-            },
-            {
-              "label": "Center",
-              "value": "center"
-            },
-            {
-              "label": "Bottom",
-              "value": "bottom"
-            }
-          ]
-        },
-        {
-          "identifier": "home_search_position",
-          "type": "list",
-          "description": "Position of the home hero search bar",
-          "label": "Search bar position",
-          "value": "50%",
-          "options": [
-            {
-              "label": "Top",
-              "value": "10%"
-            },
-            {
-              "label": "Center",
-              "value": "50%"
-            },
-            {
-              "label": "Bottom",
-              "value": "90%"
-            }
-          ]
-        },
-        {
-          "identifier": "home_search_shadow",
-          "type": "range",
-          "description": "Shadow size of the home hero search bar",
-          "label": "Search bar shadow size",
-          "value": 5,
-          "min": 0,
-          "max": 20
-        },
-        {
-          "identifier": "home_search_shadow_color",
-          "type": "color",
-          "description": "Shadow color of the home hero search bar",
-          "label": "Search bar shadow color",
-          "value": "rgba(0, 0, 0, 0.4)"
-        },
-        {
-          "identifier": "community_img",
-          "type": "file",
-          "description": "Community image (join the conversation)",
-          "label": "Community image"
-        },
-        {
-          "identifier": "community_img_size",
-          "type": "range",
-          "description": "Size of the Community image (join the conversation)",
-          "label": "Community image size",
-          "value": 150,
-          "min": 50,
-          "max": 600
-        }
-      ]
-    },
-    {
-      "label": "Category blocks",
-      "variables": [
-        {
-          "identifier": "blocks_padding",
-          "type": "range",
-          "description": "Padding size of the category blocks",
-          "label": "Blocks padding",
-          "value": 25,
-          "min": 0,
-          "max": 100
-        },
-        {
-          "identifier": "blocks_description",
-          "type": "list",
-          "description": "Show/hide item description",
-          "label": "Item description",
-          "value": "inline",
-          "options": [
-            {
-              "label": "Show",
-              "value": "inline"
-            },
-            {
-              "label": "Hide",
-              "value": "none"
-            }
-          ]
-        },
-        {
-          "identifier": "blocks_font_size",
-          "type": "range",
-          "description": "Title font size of the category blocks",
-          "label": "Item title font size",
-          "value": 16,
-          "min": 5,
-          "max": 50
-        },
-        {
-          "identifier": "blocks_font_case",
-          "type": "list",
-          "description": "Title font case of the category blocks",
-          "label": "Item title font case",
-          "value": "uppercase",
-          "options": [
-            {
-              "label": "Default",
-              "value": "none"
-            },
-            {
-              "label": "Uppercase",
-              "value": "uppercase"
-            },
-            {
-              "label": "Lowercase",
-              "value": "lowercase"
-            },
-            {
-              "label": "Capitalize",
-              "value": "capitalize"
-            }
-          ]
-        },
-        {
-          "identifier": "blocks_font_weight",
-          "type": "list",
-          "description": "Title font weight of the category blocks",
-          "label": "Item title font weight",
-          "value": "600",
-          "options": [
-            {
-              "label": "Light",
-              "value": "300"
-            },
-            {
-              "label": "Normal",
-              "value": "normal"
-            },
-            {
-              "label": "Semi Bold",
-              "value": "600"
-            },
-            {
-              "label": "Bold",
-              "value": "900"
-            }
-          ]
-        },
-        {
-          "identifier": "blocks_txt_color",
-          "type": "color",
-          "description": "Text color of the category blocks",
-          "label": "Text color",
-          "value": "rgba(8, 59, 102, 1)"
-        },
-        {
-          "identifier": "blocks_txt_color_hover",
-          "type": "color",
-          "description": "Text color of the category blocks (hover state)",
-          "label": "Text color (hover)",
-          "value": "rgba(255, 255, 255, 1)"
-        },
-        {
-          "identifier": "blocks_bg_color_top",
-          "type": "color",
-          "description": "Blocks top gradient background color",
-          "label": "Top gradient bg color",
-          "value": "rgba(255, 255, 255, 1)"
-        },
-        {
-          "identifier": "blocks_bg_color_bottom",
-          "type": "color",
-          "description": "Blocks bottom gradient background color",
-          "label": "Bottom gradient bg color",
-          "value": "rgba(238, 238, 238, 1)"
-        },
-        {
-          "identifier": "blocks_bg_color_top_h",
-          "type": "color",
-          "description": "Blocks top gradient background color (hover state)",
-          "label": "Top gradient bg color (hover)",
-          "value": "rgba(8, 59, 102, 1)"
-        },
-        {
-          "identifier": "blocks_bg_color_bottom_h",
-          "type": "color",
-          "description": "Blocks bottom gradient background color (hover state)",
-          "label": "Bottom gradient bg color (hover)",
-          "value": "rgba(8, 59, 102, 1)"
-        },
-        {
-          "identifier": "blocks_border_color",
-          "type": "color",
-          "description": "Border color of the category blocks",
-          "label": "Border color",
-          "value": "rgba(155, 155, 155, 1)"
-        },
-        {
-          "identifier": "blocks_border_color_h",
-          "type": "color",
-          "description": "Border color of the category blocks (hover state)",
-          "label": "Border color (hover)",
-          "value": "rgba(8, 59, 102, 1)"
-        },
-        {
-          "identifier": "blocks_shadow",
-          "type": "range",
-          "description": "Shadow size of the category blocks (hover state)",
-          "label": "Shadow size (hover)",
-          "value": 10,
-          "min": 0,
-          "max": 20
-        },
-        {
-          "identifier": "blocks_shadow_color",
-          "type": "color",
-          "description": "Shadow color of the category blocks (hover state)",
-          "label": "Shadow color (hover)",
-          "value": "rgba(0, 0, 0, 0.4)"
-        }
-      ]
-    },
-    {
-      "label": "Category icons",
-      "variables": [
-        {
-          "identifier": "blocks_icons",
-          "type": "list",
-          "description": "Show/hide category icons",
-          "label": "Category icons",
-          "value": "block",
-          "options": [
-            {
-              "label": "Show",
-              "value": "block"
-            },
-            {
-              "label": "Hide",
-              "value": "none"
-            }
-          ]
-        },
-        {
-          "identifier": "blocks_icons_size",
-          "type": "range",
-          "description": "Size of the category icons",
-          "label": "Icon size",
-          "value": 50,
-          "min": 30,
-          "max": 200
-        },
-        {
-          "identifier": "blocks_icon_1",
-          "type": "file",
-          "description": "Home category icon #1",
-          "label": "Home category icon #1"
-        },
-        {
-          "identifier": "blocks_icon_2",
-          "type": "file",
-          "description": "Home category icon #2",
-          "label": "Home category icon #2"
-        },
-        {
-          "identifier": "blocks_icon_3",
-          "type": "file",
-          "description": "Home category icon #3",
-          "label": "Home category icon #3"
-        },
-        {
-          "identifier": "blocks_icon_4",
-          "type": "file",
-          "description": "Home category icon #4",
-          "label": "Home category icon #4"
-        },
-        {
-          "identifier": "blocks_icon_5",
-          "type": "file",
-          "description": "Home category icon #5",
-          "label": "Home category icon #5"
-        },
-        {
-          "identifier": "blocks_icon_6",
-          "type": "file",
-          "description": "Home category icon #6",
-          "label": "Home category icon #6"
-        },
-        {
-          "identifier": "blocks_icon_7",
-          "type": "file",
-          "description": "Home category icon #7",
-          "label": "Home category icon #7"
-        },
-        {
-          "identifier": "blocks_icon_8",
-          "type": "file",
-          "description": "Home category icon #8",
-          "label": "Home category icon #8"
-        },
-        {
-          "identifier": "blocks_icon_9",
-          "type": "file",
-          "description": "Home category icon #9",
-          "label": "Home category icon #9"
-        },
-        {
-          "identifier": "blocks_icon_10",
-          "type": "file",
-          "description": "Home category icon #10",
-          "label": "Home category icon #10"
-        }
-      ]
-    },
+   
     {
       "label": "Community page",
       "variables": [
